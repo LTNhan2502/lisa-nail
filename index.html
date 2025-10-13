@@ -1,0 +1,1604 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lisa Nail And Spa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#090500",
+              secondary: "#ce9800",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-primary text-[#ce9800]">
+    <!-- Navbar -->
+    <nav
+      class="fixed top-0 left-0 w-full z-50 bg-primary/95 backdrop-blur-sm border-b border-secondary/20 shadow-lg"
+    >
+      <div class="max-w-6xl mx-auto px-4 sm:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <!-- Logo -->
+          <a href="#home" class="flex items-center space-x-2">
+            <span class="text-2xl font-extrabold text-secondary tracking-tight"
+              >Lisa Nail And Spa</span
+            >
+          </a>
+
+          <!-- Desktop Nav Menu -->
+          <ul class="hidden md:flex gap-1.5 items-center">
+            <li>
+              <a
+                href="#home"
+                class="px-4 py-2 rounded-[30px] font-medium text-[#ce9800] hover:bg-secondary/10 hover:text-secondary transition relative group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#services"
+                class="px-4 py-2 rounded-[30px] font-medium text-[#ce9800] hover:bg-secondary/10 hover:text-secondary transition relative group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary"
+                >Menu</a
+              >
+            </li>
+            <li>
+              <a
+                href="#testimonials"
+                class="px-4 py-2 rounded-[30px] font-medium text-[#ce9800] hover:bg-secondary/10 hover:text-secondary transition relative group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary"
+                >Testimonials</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="px-4 py-2 rounded-[30px] font-medium text-[#ce9800] hover:bg-secondary/10 hover:text-secondary transition relative group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <!-- Mobile Nav Button -->
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-button"
+              type="button"
+              aria-label="Open menu"
+              class="text-[#ce9800] hover:text-secondary focus:outline-none focus:text-secondary transition-colors duration-300"
+            >
+              <svg
+                id="menu-icon"
+                class="w-7 h-7 transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 7h16M4 12h16M4 17h16"
+                />
+              </svg>
+              <svg
+                id="close-icon"
+                class="w-7 h-7 transition-transform duration-300 hidden"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Sidebar -->
+    <div id="mobile-sidebar" class="fixed inset-0 z-50 hidden">
+      <!-- Backdrop -->
+      <div
+        id="sidebar-backdrop"
+        class="fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity duration-300 opacity-0"
+      ></div>
+
+      <!-- Sidebar Panel -->
+      <div
+        id="sidebar-panel"
+        class="fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-gradient-to-b from-primary via-primary/95 to-gray-900 shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out"
+      >
+        <!-- Sidebar Header -->
+        <div
+          class="flex items-center justify-between p-6 border-b border-secondary/20"
+        >
+          <h2 class="text-xl font-bold text-secondary">Menu</h2>
+          <button
+            id="close-sidebar"
+            class="text-[#ce9800] hover:text-secondary transition-colors duration-300"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Sidebar Content -->
+        <div class="flex flex-col h-full">
+          <!-- Navigation Links -->
+          <nav class="flex-1 px-6 py-8">
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#home"
+                  class="mobile-nav-link group flex items-center px-4 py-3 rounded-xl text-[#ce9800] hover:bg-secondary/10 hover:text-secondary transition-all duration-300"
+                >
+                  <svg
+                    class="w-5 h-5 mr-3 group-hover:scale-110 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                    />
+                  </svg>
+                  <span class="font-medium">Home</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="mobile-nav-link group flex items-center px-4 py-3 rounded-xl text-[#ce9800] hover:bg-secondary/10 hover:text-secondary transition-all duration-300"
+                >
+                  <svg
+                    class="w-5 h-5 mr-3 group-hover:scale-110 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+                    />
+                  </svg>
+                  <span class="font-medium">Menu</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#testimonials"
+                  class="mobile-nav-link group flex items-center px-4 py-3 rounded-xl text-[#ce9800] hover:bg-secondary/10 hover:text-secondary transition-all duration-300"
+                >
+                  <svg
+                    class="w-5 h-5 mr-3 group-hover:scale-110 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    />
+                  </svg>
+                  <span class="font-medium">Reviews</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="mobile-nav-link group flex items-center px-4 py-3 rounded-xl text-[#ce9800] hover:bg-secondary/10 hover:text-secondary transition-all duration-300"
+                >
+                  <svg
+                    class="w-5 h-5 mr-3 group-hover:scale-110 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                  <span class="font-medium">Contact</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      html {
+        scroll-padding-top: 68px !important; /* navbar height + a bit */
+        /* Ẩn scrollbar dọc cho nhiều trình duyệt */
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer, Edge */
+      }
+
+      html::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+      }
+
+      @media (max-width: 767px) {
+        html {
+          scroll-padding-top: 64px !important;
+        }
+      }
+
+      /* Mobile sidebar animations */
+      #mobile-sidebar.show .sidebar-backdrop {
+        opacity: 1;
+      }
+
+      #mobile-sidebar.show #sidebar-panel {
+        transform: translateX(0);
+      }
+
+      /* Mobile nav link animations */
+      .mobile-nav-link {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .mobile-nav-link::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(206, 152, 0, 0.1),
+          transparent
+        );
+        transition: left 0.5s;
+      }
+
+      .mobile-nav-link:hover::before {
+        left: 100%;
+      }
+
+      /* Prevent body scroll when sidebar is open */
+      body.sidebar-open {
+        overflow: hidden;
+      }
+    </style>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="pt-24 min-h-screen max-w-4xl mx-auto flex items-center justify-center relative px-4"
+    >
+      <!-- Hero background: luxury bokeh, golden overlay gradient, subtle glow -->
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-[#18100a] via-[#221709]/90 to-[#18100a]/70"
+      ></div>
+      <div class="absolute inset-0 pointer-events-none">
+        <img
+          src="./img/hero-bokeh.png"
+          alt=""
+          class="w-full h-full object-cover opacity-70"
+          style="mix-blend-mode: lighten"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-[#ce980088] via-transparent to-[#18100a]"
+        ></div>
+      </div>
+      <div class="relative z-10 text-center max-w-xl mx-auto px-3 py-12">
+        <div class="flex justify-center mb-7">
+          <span
+            class="inline-flex bg-[#fffbeec0] rounded-full shadow-lg border-4 border-[#e0c47d40] overflow-hidden"
+          >
+            <img
+              src="https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.30808-1/307947001_528490482610325_206823254241389539_n.jpg?stp=cp0_dst-jpg_s60x60_tt6&_nc_cat=104&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=ishV8jPI7dQQ7kNvwEfFtRN&_nc_oc=AdlBjyOcWvI6yh2TCoWviMYdpH-ivy-h4e79NoPUQKyJdW-ry_5bYRsu7P185Ofio-A&_nc_zt=24&_nc_ht=scontent.fsgn5-3.fna&_nc_gid=sljSXw2bSkFdltKOGqkV0g&oh=00_AfcWglG9S1Fm1euyk2Ao5cssNpg5LPEQxXH-hk2syjNDTA&oe=68F28758"
+              alt="crown"
+              class="w-full h-full object-cover"
+            />
+          </span>
+        </div>
+        <h1
+          class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight tracking-tight drop-shadow-lg"
+        >
+          <span
+            class="bg-gradient-to-r from-secondary via-yellow-300 to-secondary bg-clip-text text-transparent shadow-xl"
+            style="letter-spacing: 2px"
+            >Lisa Nail <span class="italic font-serif">&</span> Spa</span
+          >
+        </h1>
+        <p
+          class="text-xl md:text-2xl mb-8 text-gray-100 font-medium italic max-w-prose mx-auto opacity-90 shadow-xl"
+        >
+          Indulge in <span class="text-secondary font-bold">luxury</span> &amp;
+          <span class="text-secondary font-bold">elegance</span>.<br />
+          <span class="text-[#f7e9bd]">Lisa Nail And Spa</span>—where beauty
+          meets sophistication and every detail is royal.
+        </p>
+        <div
+          class="flex flex-col md:flex-row gap-4 mt-8 items-center justify-center"
+        >
+          <a
+            href="#contact"
+            class="w-full md:w-auto bg-gradient-to-r from-secondary to-yellow-400 hover:from-yellow-300 hover:to-secondary text-primary font-extrabold py-4 px-10 rounded-full transition-all text-lg shadow-[0_8px_32px_0_rgba(206,152,0,0.17)] focus:outline-none focus:ring-2 focus:ring-secondary uppercase tracking-widest border-0"
+            style="box-shadow: 0 4px 24px 0 #e0c47d50, 0 0.5px 0 #fff"
+          >
+            Book an Appointment
+          </a>
+          <a
+            href="#services"
+            class="w-full md:w-auto border-2 border-secondary text-secondary hover:bg-secondary hover:text-primary font-bold py-4 px-10 rounded-full transition-all text-lg shadow-xl focus:outline-none focus:ring-2 focus:ring-secondary bg-black/40 backdrop-blur-sm uppercase tracking-widest"
+          >
+            View Our Services
+          </a>
+        </div>
+        <div class="mt-10 flex justify-center">
+          <span
+            class="inline-flex items-center gap-3 text-[#F8E9BF] text-lg md:text-xl font-semibold opacity-90"
+          >
+            <svg viewBox="0 0 40 8" fill="none" class="w-12 h-2 mr-2">
+              <ellipse
+                cx="20"
+                cy="4"
+                rx="20"
+                ry="3.7"
+                fill="#ce9800"
+                fill-opacity="0.22"
+              />
+            </svg>
+            Experience the Royal Touch
+            <svg viewBox="0 0 40 8" fill="none" class="w-12 h-2 ml-2">
+              <ellipse
+                cx="20"
+                cy="4"
+                rx="20"
+                ry="3.7"
+                fill="#ce9800"
+                fill-opacity="0.22"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Background Section with bg.png -->
+    <section
+      class="max-w-4xl mx-auto relative overflow-hidden flex justify-center items-center"
+    >
+      <img
+        src="./img/bg.png"
+        alt="Background"
+        class="w-full h-auto block"
+        style="display: block"
+      />
+      <div
+        class="absolute inset-0 flex items-center justify-center pointer-events-none"
+      >
+        <p
+          class="text-xl md:text-2xl font-semibold text-yellow-300 z-10 pointer-events-auto px-6"
+          style="
+            font-family: 'Dancing Script', cursive;
+            text-align: justify;
+            text-align-last: center;
+            max-width: 80%;
+          "
+        >
+          If you are not satisfied with any requested service, please inform the
+          manager, or text to (209) 518-6312, so that we can redo without
+          charge.
+        </p>
+      </div>
+    </section>
+
+    <!-- Waxing & Foot Massage Menu -->
+    <section id="services" class="py-12">
+      <div class="max-w-4xl mx-auto">
+        <div class="relative overflow-hidden flex justify-center items-center">
+          <img
+            src="./img/waxing-foot.jpg"
+            alt="Background"
+            class="w-full h-auto block"
+            style="display: block"
+          />
+        </div>
+        <div class="space-y-6 mt-4">
+          <!-- Foot Massage Services -->
+          <div class="">
+            <h3 class="text-xl font-semibold mb-4 text-secondary">
+              <img src="./img/foot.png" alt="" />
+            </h3>
+            <div class="p-4">
+              <div class="mb-4">
+                <p class="text-gray-300 text-sm leading-relaxed">
+                  Soaking feet in warm/hot water, applying warm paraffin wax,
+                  massaging with hot lotion & hot stones, and wrapping hot towel
+                </p>
+              </div>
+              <div class="space-y-4">
+                <!-- 30 minute massage -->
+                <div class="flex justify-between items-center relative">
+                  <div class="flex gap-2">
+                    <div>
+                      <span class="text-sm text-[#ce9800]">1.</span>
+                      <span class="text-sm text-[#ce9800] font-semibold">
+                        30 minute massage</span
+                      >
+                    </div>
+                  </div>
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <div class="text-secondary font-bold text-lg">
+                    <span class="text-secondary font-bold">$35</span>
+                  </div>
+                </div>
+
+                <!-- 60 minute massage -->
+                <div class="flex justify-between items-center relative">
+                  <div class="flex gap-2">
+                    <div>
+                      <span class="text-sm text-[#ce9800]">2.</span>
+                      <span class="text-sm text-[#ce9800] font-semibold">
+                        60 minute massage</span
+                      >
+                    </div>
+                  </div>
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <div class="text-secondary font-bold text-lg">
+                    <span class="text-secondary font-bold">$60</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional Services -->
+          <div class="">
+            <div
+              class="relative overflow-hidden flex justify-center items-center"
+            >
+              <img
+                src="./img/additional.png"
+                alt="Background"
+                class="w-full h-auto block"
+                style="display: block"
+              />
+            </div>
+            <div class="p-4">
+              <div class="space-y-4">
+                <!-- Special Callus Treatment -->
+                <div class="flex justify-between items-center relative">
+                  <div class="flex gap-2">
+                    <div>
+                      <span class="text-sm text-[#ce9800]">1.</span>
+                      <span class="text-sm text-[#ce9800] font-semibold">
+                        Special Callus Treatment</span
+                      >
+                    </div>
+                  </div>
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <div class="text-secondary font-bold text-lg">
+                    <span class="text-secondary font-bold">$10</span>
+                  </div>
+                </div>
+
+                <!-- Callus Removal -->
+                <div class="flex justify-between items-center relative">
+                  <div class="flex gap-2">
+                    <div>
+                      <span class="text-sm text-[#ce9800]">2.</span>
+                      <span class="text-sm text-[#ce9800] font-semibold">
+                        Callus Removal</span
+                      >
+                    </div>
+                  </div>
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <div class="text-secondary font-bold text-lg">
+                    <span class="text-secondary font-bold">$5</span>
+                  </div>
+                </div>
+
+                <!-- Flower / French Design -->
+                <div class="flex justify-between items-center relative">
+                  <div class="flex gap-2">
+                    <div>
+                      <span class="text-sm text-[#ce9800]">3.</span>
+                      <span class="text-sm text-[#ce9800] font-semibold">
+                        Flower / French Design</span
+                      >
+                    </div>
+                  </div>
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <div class="text-secondary font-bold text-lg">
+                    <span class="text-secondary font-bold">$8+</span>
+                  </div>
+                </div>
+
+                <!-- Nails Trimming Only -->
+                <div class="flex justify-between items-center relative">
+                  <div class="flex gap-2">
+                    <div>
+                      <span class="text-sm text-[#ce9800]">4.</span>
+                      <span class="text-sm text-[#ce9800] font-semibold">
+                        Nails Trimming Only</span
+                      >
+                    </div>
+                  </div>
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <div class="text-secondary font-bold text-lg">
+                    <span class="text-secondary font-bold">$5</span>
+                  </div>
+                </div>
+
+                <!-- Nails Take Off -->
+                <div class="flex justify-between items-center relative">
+                  <div class="flex gap-2">
+                    <div>
+                      <span class="text-sm text-[#ce9800]">5.</span>
+                      <span class="text-sm text-[#ce9800] font-semibold">
+                        Nails Take Off</span
+                      >
+                    </div>
+                  </div>
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <div class="text-secondary font-bold text-lg">
+                    <span class="text-secondary font-bold">$10</span>
+                  </div>
+                </div>
+
+                <!-- Nails Repair -->
+                <div class="flex justify-between items-center relative">
+                  <div class="flex gap-2">
+                    <div>
+                      <span class="text-sm text-[#ce9800]">6.</span>
+                      <span class="text-sm text-[#ce9800] font-semibold">
+                        Nails Repair</span
+                      >
+                    </div>
+                  </div>
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <div class="text-secondary font-bold text-lg">
+                    <span class="text-secondary font-bold">$5+</span>
+                  </div>
+                </div>
+
+                <!-- Hand Nails Polish -->
+                <div class="flex justify-between items-center relative">
+                  <div class="flex gap-2">
+                    <div>
+                      <span class="text-sm text-[#ce9800]">7.</span>
+                      <span class="text-sm text-[#ce9800] font-semibold">
+                        Hand Nails Polish</span
+                      >
+                    </div>
+                  </div>
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <div class="text-secondary font-bold text-lg">
+                    <span class="text-secondary font-bold">$10</span>
+                  </div>
+                </div>
+
+                <!-- Toes Color Changed -->
+                <div class="flex justify-between items-center relative">
+                  <div class="flex gap-2">
+                    <div>
+                      <span class="text-sm text-[#ce9800]">8.</span>
+                      <span class="text-sm text-[#ce9800] font-semibold">
+                        Toes Color Changed</span
+                      >
+                    </div>
+                  </div>
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <div class="text-secondary font-bold text-lg">
+                    <span class="text-secondary font-bold">$15</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-4 text-center">
+                <p class="text-gray-300 text-sm italic">
+                  Trimming, cuticle grooming, coloring
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- WAXING - THREADING Services -->
+          <div class="">
+            <div
+              class="relative overflow-hidden flex justify-center items-center"
+            >
+              <img
+                src="./img/waxing.png"
+                alt="Background"
+                class="w-full h-auto block"
+                style="display: block"
+              />
+            </div>
+            <div class="p-4">
+              <div class="space-y-4">
+                <!-- Eye Brows -->
+                <div class="flex justify-between items-center relative">
+                  <div class="flex gap-2">
+                    <div>
+                      <span class="text-sm text-[#ce9800]">1.</span>
+                      <span class="text-sm text-[#ce9800] font-semibold">
+                        Eye Brows 10 miss</span
+                      >
+                    </div>
+                  </div>
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <div class="text-secondary font-bold text-lg">
+                    <span class="text-secondary font-bold">$12+/$15+</span>
+                  </div>
+                </div>
+
+                <!-- Lip -->
+                <div class="flex justify-between items-center relative">
+                  <div class="flex gap-2">
+                    <div>
+                      <span class="text-sm text-[#ce9800]">2.</span>
+                      <span class="text-sm text-[#ce9800] font-semibold">
+                        Lip</span
+                      >
+                    </div>
+                  </div>
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <div class="text-secondary font-bold text-lg">
+                    <span class="text-secondary font-bold">$8+</span>
+                  </div>
+                </div>
+
+                <!-- Chin -->
+                <div class="flex justify-between items-center relative">
+                  <div class="flex gap-2">
+                    <div>
+                      <span class="text-sm text-[#ce9800]">3.</span>
+                      <span class="text-sm text-[#ce9800] font-semibold">
+                        Chin</span
+                      >
+                    </div>
+                  </div>
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <div class="text-secondary font-bold text-lg">
+                    <span class="text-secondary font-bold">$10+</span>
+                  </div>
+                </div>
+
+                <!-- Whole Face -->
+                <div class="flex justify-between items-center relative">
+                  <div class="flex gap-2">
+                    <div>
+                      <span class="text-sm text-[#ce9800]">4.</span>
+                      <span class="text-sm text-[#ce9800] font-semibold">
+                        Whole Face 25 mins</span
+                      >
+                    </div>
+                  </div>
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <div class="text-secondary font-bold text-lg">
+                    <span class="text-secondary font-bold">$40+</span>
+                  </div>
+                </div>
+
+                <!-- Under Arms -->
+                <div class="flex justify-between items-center relative">
+                  <div class="flex gap-2">
+                    <div>
+                      <span class="text-sm text-[#ce9800]">5.</span>
+                      <span class="text-sm text-[#ce9800] font-semibold">
+                        Under Arms</span
+                      >
+                    </div>
+                  </div>
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <div class="text-secondary font-bold text-lg">
+                    <span class="text-secondary font-bold">$30+</span>
+                  </div>
+                </div>
+
+                <!-- Half Arms -->
+                <div class="flex justify-between items-center relative">
+                  <div class="flex gap-2">
+                    <div>
+                      <span class="text-sm text-[#ce9800]">6.</span>
+                      <span class="text-sm text-[#ce9800] font-semibold">
+                        Half Arms</span
+                      >
+                    </div>
+                  </div>
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <div class="text-secondary font-bold text-lg">
+                    <span class="text-secondary font-bold">$30+</span>
+                  </div>
+                </div>
+
+                <!-- Full Arms -->
+                <div class="flex justify-between items-center relative">
+                  <div class="flex gap-2">
+                    <div>
+                      <span class="text-sm text-[#ce9800]">7.</span>
+                      <span class="text-sm text-[#ce9800] font-semibold">
+                        Full Arms</span
+                      >
+                    </div>
+                  </div>
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <div class="text-secondary font-bold text-lg">
+                    <span class="text-secondary font-bold">$40+</span>
+                  </div>
+                </div>
+
+                <!-- Back -->
+                <div class="flex justify-between items-center relative">
+                  <div class="flex gap-2">
+                    <div>
+                      <span class="text-sm text-[#ce9800]">8.</span>
+                      <span class="text-sm text-[#ce9800] font-semibold">
+                        Back</span
+                      >
+                    </div>
+                  </div>
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <div class="text-secondary font-bold text-lg">
+                    <span class="text-secondary font-bold">$50+</span>
+                  </div>
+                </div>
+
+                <!-- Side Burns -->
+                <div class="flex justify-between items-center relative">
+                  <div class="flex gap-2">
+                    <div>
+                      <span class="text-sm text-[#ce9800]">9.</span>
+                      <span class="text-sm text-[#ce9800] font-semibold">
+                        Side Burns</span
+                      >
+                    </div>
+                  </div>
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <div class="text-secondary font-bold text-lg">
+                    <span class="text-secondary font-bold">$20+</span>
+                  </div>
+                </div>
+
+                <!-- Bikini -->
+                <div class="flex justify-between items-center relative">
+                  <div class="flex gap-2">
+                    <div>
+                      <span class="text-sm text-[#ce9800]">10.</span>
+                      <span class="text-sm text-[#ce9800] font-semibold">
+                        Bikini (varied)</span
+                      >
+                    </div>
+                  </div>
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <div class="text-secondary font-bold text-lg">
+                    <span class="text-secondary font-bold">$50+</span>
+                  </div>
+                </div>
+
+                <!-- Brazilian Bikini -->
+                <div class="flex justify-between items-center relative">
+                  <div class="flex gap-2">
+                    <div>
+                      <span class="text-sm text-[#ce9800]">11.</span>
+                      <span class="text-sm text-[#ce9800] font-semibold">
+                        Brazilian Bikini (varied)</span
+                      >
+                    </div>
+                  </div>
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <div class="text-secondary font-bold text-lg">
+                    <span class="text-secondary font-bold">$60+</span>
+                  </div>
+                </div>
+
+                <!-- Half Leg -->
+                <div class="flex justify-between items-center relative">
+                  <div class="flex gap-2">
+                    <div>
+                      <span class="text-sm text-[#ce9800]">12.</span>
+                      <span class="text-sm text-[#ce9800] font-semibold">
+                        Half Leg</span
+                      >
+                    </div>
+                  </div>
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <div class="text-secondary font-bold text-lg">
+                    <span class="text-secondary font-bold">$45+</span>
+                  </div>
+                </div>
+
+                <!-- Full Leg -->
+                <div class="flex justify-between items-center relative">
+                  <div class="flex gap-2">
+                    <div>
+                      <span class="text-sm text-[#ce9800]">13.</span>
+                      <span class="text-sm text-[#ce9800] font-semibold">
+                        Full Leg</span
+                      >
+                    </div>
+                  </div>
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <div class="text-secondary font-bold text-lg">
+                    <span class="text-secondary font-bold">$70+</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facials & Eyelashes Menu -->
+    <section class="py-12 bg-primary">
+      <div class="max-w-4xl mx-auto">
+        <div class="relative overflow-hidden flex justify-center items-center">
+          <img
+            src="./img/waxing-foot.jpg"
+            alt="Background"
+            class="w-full h-auto block"
+            style="display: block"
+          />
+        </div>
+        <div class="space-y-6">
+          <!-- Facials (Anti-Aging Facials) -->
+          <div class="bg-gray-900/50 rounded-lg p-4">
+            <h3 class="text-xl font-semibold mb-4 text-secondary">
+              Facials (Anti-Aging Facials)
+            </h3>
+            <div class="space-y-4">
+              <!-- Classic Facial -->
+              <div>
+                <div class="flex justify-between items-center relative">
+                  <div class="flex gap-2">
+                    <div>
+                      <span class="text-sm text-[#ce9800] font-semibold"
+                        >Classic Facial</span
+                      >
+                    </div>
+                  </div>
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <div class="text-secondary font-bold text-lg">
+                    <span class="text-secondary font-bold">$50+</span>
+                  </div>
+                </div>
+                <div class="text-gray-300 text-sm mt-1 pl-3">
+                  Consultation, cleansing skin, analysis, steaming, exfoliating,
+                  extractions, 40 mins facial massage using classic strokes.
+                </div>
+              </div>
+
+              <!-- European Facial -->
+              <div>
+                <div class="flex justify-between items-center relative mt-4">
+                  <div class="flex gap-2">
+                    <div>
+                      <span class="text-sm text-[#ce9800] font-semibold"
+                        >European Facial</span
+                      >
+                    </div>
+                  </div>
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <div class="text-secondary font-bold text-lg">
+                    <span class="text-secondary font-bold">$65+</span>
+                  </div>
+                </div>
+                <div class="text-gray-300 text-sm mt-1 pl-3">
+                  Removing makeup, cleansing, steaming, exfoliating, extracting,
+                  60 mins facial massage with basic strokes.
+                </div>
+              </div>
+
+              <!-- Deluxe Facial -->
+              <div>
+                <div class="flex justify-between items-center relative mt-4">
+                  <div class="flex gap-2">
+                    <div>
+                      <span class="text-sm text-[#ce9800] font-semibold"
+                        >Deluxe Facial</span
+                      >
+                    </div>
+                  </div>
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <div class="text-secondary font-bold text-lg">
+                    <span class="text-secondary font-bold">$90+</span>
+                  </div>
+                </div>
+                <div class="text-gray-300 text-sm mt-1 pl-3">
+                  Removing makeup, cleansing, steaming, exfoliating, extracting,
+                  applying mask, toning. 90 mins massage treating the skin to
+                  fix any existing problem as needed (dark spots, acne,..)
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Eyelashes Extension (last 3 weeks & up) -->
+          <div class="bg-gray-900/50 rounded-lg p-4 mt-6">
+            <h3 class="text-xl font-semibold mb-4 text-secondary">
+              Eyelashes Extension
+              <span class="italic text-gray-300 text-base"
+                >(last 3 weeks & up)</span
+              >
+            </h3>
+            <div class="space-y-4">
+              <!-- Classic Eyelashes Extension -->
+              <div>
+                <div class="text-[#ce9800] font-semibold mb-1">
+                  Classic Eyelashes Extension
+                </div>
+                <div class="text-gray-300 text-sm mb-2 pl-3">
+                  Natural, soft, healthy, and long lasting (3 weeks depending on
+                  the care applied)
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-sm text-[#ce9800] font-semibold"
+                    >Full Set</span
+                  >
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <span class="text-secondary font-bold text-lg">$70+</span>
+                </div>
+                <div class="flex justify-between items-center mt-1">
+                  <span class="text-sm text-[#ce9800] font-semibold"
+                    >Refill</span
+                  >
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <span class="text-secondary font-bold text-lg">$45+</span>
+                </div>
+              </div>
+
+              <!-- Individual Eyelashes Extensions -->
+              <div class="mt-6">
+                <div class="text-[#ce9800] font-semibold mb-1">
+                  Individual Eyelashes Extensions
+                </div>
+                <div class="text-gray-300 text-sm mb-2 pl-3">
+                  Individual thin, short, medium or long lashes, and long
+                  lasting (3 weeks depending on the care applied)
+                </div>
+              </div>
+
+              <!-- Natural (short & thin) -->
+              <div class="mt-6">
+                <div class="text-[#ce9800] font-semibold mb-1">
+                  Natural (short & thin)
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-sm text-[#ce9800] font-semibold"
+                    >Full Set</span
+                  >
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <span class="text-secondary font-bold text-lg">$60+</span>
+                </div>
+                <div class="flex justify-between items-center mt-1">
+                  <span class="text-sm text-[#ce9800] font-semibold">Fill</span>
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <span class="text-secondary font-bold text-lg">$45+</span>
+                </div>
+              </div>
+
+              <!-- Special (longer, fuller, and sexier) -->
+              <div class="mt-6">
+                <div class="text-[#ce9800] font-semibold mb-1">
+                  Special (longer, fuller, and sexier)
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-sm text-[#ce9800] font-semibold"
+                    >Full Set</span
+                  >
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <span class="text-secondary font-bold text-lg">$85+</span>
+                </div>
+                <div class="flex justify-between items-center mt-1">
+                  <span class="text-sm text-[#ce9800] font-semibold">Fill</span>
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <span class="text-secondary font-bold text-lg">$50+</span>
+                </div>
+              </div>
+
+              <!-- Volume Eyelashes Extension (softer & fuller) -->
+              <div class="mt-6">
+                <div class="text-[#ce9800] font-semibold mb-1">
+                  Volume Eyelashes Extension (softer & fuller)
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-sm text-[#ce9800] font-semibold"
+                    >Full Set</span
+                  >
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <span class="text-secondary font-bold text-lg">$95+</span>
+                </div>
+                <div class="flex justify-between items-center mt-1">
+                  <span class="text-sm text-[#ce9800] font-semibold">Fill</span>
+                  <div class="h-[1px] flex-grow mx-4 bg-gray-300"></div>
+                  <span class="text-secondary font-bold text-lg">$55+</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Drinks Menu -->
+    <section class="py-12 bg-black">
+      <div class="max-w-4xl mx-auto">
+        <div class="relative overflow-hidden flex justify-center items-center">
+          <img
+            src="./img/drinks.jpg"
+            alt="Background"
+            class="w-full h-auto block"
+            style="display: block"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-14 bg-black transition-all">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6">
+        <h2
+          class="text-3xl md:text-4xl font-bold mb-12 text-center text-[#ce9800] drop-shadow-sm tracking-wide transition"
+        >
+          What Our Customers Say
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div
+            class="group relative p-6 border-2 border-gray-800 rounded-xl bg-black shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-black/60 testimonial-card-shimmer"
+            style="overflow: hidden"
+            data-card-index="1"
+          >
+            <!-- Shimmer overlay -->
+            <div class="shimmer-effect pointer-events-none"></div>
+            <div
+              class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-[#ce9800] via-orange-200 to-[#ce9800] rounded-t-xl opacity-70"
+            ></div>
+            <div class="flex items-center space-x-4 mb-4">
+              <img
+                src="https://randomuser.me/api/portraits/women/68.jpg"
+                alt="avatar"
+                class="w-14 h-14 rounded-full object-cover border-4 border-gray-800 group-hover:border-gray-600 shadow-lg transition"
+              />
+              <div>
+                <div class="font-semibold text-base text-[#ce9800]">
+                  Anna Tran
+                </div>
+                <div
+                  class="flex text-yellow-400 text-lg space-x-1 animate-pulse group-hover:animate-none"
+                >
+                  <span>★</span><span>★</span><span>★</span><span>★</span
+                  ><span>★</span>
+                </div>
+                <div
+                  class="mt-1 text-xs border border-[#ce9800] text-gray-200 px-2 py-1 rounded-full shadow inline-block font-semibold"
+                >
+                  VIP Customer
+                </div>
+              </div>
+            </div>
+            <div class="flex-1 flex items-center">
+              <p
+                class="text-base text-gray-200 text-center w-full italic opacity-95 transition group-hover:text-[#ce9800] group-hover:opacity-100"
+              >
+                "Amazing service! The staff are professional, the vibe is so
+                relaxing. I'm really satisfied with the result."
+              </p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="group relative p-6 border-2 border-gray-800 rounded-xl bg-black shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-black/60 testimonial-card-shimmer"
+            style="overflow: hidden"
+            data-card-index="2"
+          >
+            <!-- Shimmer overlay -->
+            <div class="shimmer-effect pointer-events-none"></div>
+            <div
+              class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-[#ce9800] via-orange-200 to-[#ce9800] rounded-t-xl opacity-70"
+            ></div>
+            <div class="flex items-center space-x-4 mb-4">
+              <img
+                src="https://randomuser.me/api/portraits/women/60.jpg"
+                alt="avatar"
+                class="w-14 h-14 rounded-full object-cover border-4 border-gray-800 group-hover:border-gray-600 shadow-lg transition"
+              />
+              <div>
+                <div class="font-semibold text-base text-[#ce9800]">
+                  Michelle Nguyen
+                </div>
+                <div
+                  class="flex text-yellow-400 text-lg space-x-1 animate-pulse group-hover:animate-none"
+                >
+                  <span>★</span><span>★</span><span>★</span><span>★</span
+                  ><span>★</span>
+                </div>
+                <div
+                  class="mt-1 text-xs border border-[#ce9800] text-gray-200 px-2 py-1 rounded-full shadow inline-block font-semibold"
+                >
+                  Loyal Customer
+                </div>
+              </div>
+            </div>
+            <div class="flex-1 flex items-center">
+              <p
+                class="text-base text-gray-200 text-center w-full italic opacity-95 transition group-hover:text-[#ce9800] group-hover:opacity-100"
+              >
+                "The foot massage was super relaxing, and the technicians are
+                very skilled. I'll definitely come back next time!"
+              </p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="group relative p-6 border-2 border-gray-800 rounded-xl bg-black shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-black/60 testimonial-card-shimmer"
+            style="overflow: hidden"
+            data-card-index="3"
+          >
+            <!-- Shimmer overlay -->
+            <div class="shimmer-effect pointer-events-none"></div>
+            <div
+              class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-[#ce9800] via-orange-200 to-[#ce9800] rounded-t-xl opacity-70"
+            ></div>
+            <div class="flex items-center space-x-4 mb-4">
+              <img
+                src="https://randomuser.me/api/portraits/women/65.jpg"
+                alt="avatar"
+                class="w-14 h-14 rounded-full object-cover border-4 border-gray-800 group-hover:border-gray-600 shadow-lg transition"
+              />
+              <div>
+                <div class="font-semibold text-base text-[#ce9800]">
+                  Linda Le
+                </div>
+                <div
+                  class="flex text-yellow-400 text-lg space-x-1 animate-pulse group-hover:animate-none"
+                >
+                  <span>★</span><span>★</span><span>★</span><span>★</span
+                  ><span>★</span>
+                </div>
+                <div
+                  class="mt-1 text-xs border border-[#ce9800] text-gray-200 px-2 py-1 rounded-full shadow inline-block font-semibold"
+                >
+                  New Customer
+                </div>
+              </div>
+            </div>
+            <div class="flex-1 flex items-center">
+              <p
+                class="text-base text-gray-200 text-center w-full italic opacity-95 transition group-hover:text-[#ce9800] group-hover:opacity-100"
+              >
+                "The facials were so effective! My skin improved a lot after
+                just three treatments. Thank you, Lisa Nail And Spa!"
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 flex justify-center">
+          <div
+            class="bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800 border-2 border-gray-900 rounded-full px-7 py-3 text-[#ce9800] text-lg font-bold shadow-md hover:bg-gradient-to-l hover:from-gray-900 hover:to-gray-800 hover:text-gray-300 transition cursor-pointer select-none group animate-fade-in-down flex items-center gap-1"
+          >
+            <span
+              class="group-hover:underline group-hover:text-secondary transition"
+              >See More Reviews</span
+            >
+            <svg
+              class="ml-1 w-6 h-6 inline text-secondary group-hover:text-[#ce9800] transition"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="3"
+              viewBox="0 0 24 24"
+            >
+              <path d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <style>
+        .shimmer-effect {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          border-radius: inherit;
+          z-index: 2;
+          pointer-events: none;
+          background: linear-gradient(
+            120deg,
+            transparent 30%,
+            rgba(255, 255, 255, 0.18) 50%,
+            transparent 70%
+          );
+          width: 120%;
+          height: 100%;
+          transform: translateX(-70%);
+          opacity: 0;
+        }
+        .shimmer-effect.active {
+          animation: shimmer-move 1.2s cubic-bezier(0.4, 0.1, 0.5, 1) 0s 1
+            forwards;
+          opacity: 1;
+        }
+        @keyframes shimmer-move {
+          0% {
+            transform: translateX(-70%);
+            opacity: 1;
+          }
+          90% {
+            opacity: 1;
+          }
+          100% {
+            transform: translateX(70%);
+            opacity: 0;
+          }
+        }
+      </style>
+      <script>
+        // Áp dụng hiệu ứng shimmer cho tất cả các card testimonial, mỗi card chỉ chạy shimmer một lần trên mỗi lần hover
+        (function () {
+          const cards = document.querySelectorAll(".testimonial-card-shimmer");
+          cards.forEach((card) => {
+            const shimmer = card.querySelector(".shimmer-effect");
+            let shimmerRun = false;
+
+            card.addEventListener("mouseenter", function () {
+              if (!shimmerRun) {
+                shimmer.classList.add("active");
+                shimmerRun = true;
+              }
+            });
+
+            shimmer.addEventListener("animationend", function () {
+              shimmer.classList.remove("active");
+              setTimeout(() => {
+                shimmerRun = false;
+              }, 10);
+            });
+          });
+        })();
+      </script>
+    </section>
+
+    <!-- Images gallery -->
+    <section id="gallery" class="py-14 bg-black">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2
+          class="text-3xl md:text-4xl font-bold mb-10 text-center text-[#ce9800] drop-shadow-lg tracking-wide"
+        >
+          Image Gallery
+        </h2>
+        <div
+          class="columns-2 sm:columns-3 md:columns-4 gap-5 space-y-4 [column-fill:_balance]"
+        >
+          <!-- Gallery Images -->
+          <!-- Sử dụng 9 ảnh, gallery_01.jpg tới gallery_09.jpg -->
+          <img
+            src="./img/gallery_01.jpg"
+            alt="Gallery 1"
+            class="w-full mb-4 rounded-lg transition-shadow duration-200 shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+          />
+          <img
+            src="./img/gallery_02.jpg"
+            alt="Gallery 2"
+            class="w-full mb-4 rounded-lg transition-shadow duration-200 shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+          />
+          <img
+            src="./img/gallery_03.jpg"
+            alt="Gallery 3"
+            class="w-full mb-4 rounded-lg transition-shadow duration-200 shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+          />
+          <img
+            src="./img/gallery_04.jpg"
+            alt="Gallery 4"
+            class="w-full mb-4 rounded-lg transition-shadow duration-200 shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+          />
+          <img
+            src="./img/gallery_05.jpg"
+            alt="Gallery 5"
+            class="w-full mb-4 rounded-lg transition-shadow duration-200 shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+          />
+          <img
+            src="./img/gallery_06.jpg"
+            alt="Gallery 6"
+            class="w-full mb-4 rounded-lg transition-shadow duration-200 shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+          />
+          <img
+            src="./img/gallery_07.jpg"
+            alt="Gallery 7"
+            class="w-full mb-4 rounded-lg transition-shadow duration-200 shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+          />
+          <img
+            src="./img/gallery_08.jpg"
+            alt="Gallery 8"
+            class="w-full mb-4 rounded-lg transition-shadow duration-200 shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+          />
+          <img
+            src="./img/gallery_09.jpg"
+            alt="Gallery 9"
+            class="w-full mb-4 rounded-lg transition-shadow duration-200 shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+          />
+          <img
+            src="./img/gallery_10.jpg"
+            alt="Gallery 9"
+            class="w-full mb-4 rounded-lg transition-shadow duration-200 shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+          />
+          <img
+            src="./img/gallery_11.jpg"
+            alt="Gallery 9"
+            class="w-full mb-4 rounded-lg transition-shadow duration-200 shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+          />
+          <img
+            src="./img/gallery_12.jpg"
+            alt="Gallery 9"
+            class="w-full mb-4 rounded-lg transition-shadow duration-200 shadow-[0_2px_12px_0_rgba(255,255,224,0.23)] hover:shadow-[0_2px_22px_0_rgba(255,255,240,0.48)]"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 py-8">
+      <div class="max-w-4xl mx-auto px-4">
+        <div class="space-y-6">
+          <div class="text-center">
+            <h3 class="text-xl font-bold text-secondary mb-4">
+              Lisa Nail And Spa
+            </h3>
+            <p class="text-gray-300 mb-4 text-sm">
+              Professional nail care and beauty services in a luxurious and
+              welcoming space.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <h4 class="text-lg font-semibold text-secondary mb-4">Services</h4>
+            <div class="grid grid-cols-2 gap-2 text-gray-300 text-sm">
+              <a href="#" class="hover:text-secondary transition-colors"
+                >Nail Care</a
+              >
+              <a href="#" class="hover:text-secondary transition-colors"
+                >Foot Massage</a
+              >
+              <a href="#" class="hover:text-secondary transition-colors"
+                >Facial</a
+              >
+              <a href="#" class="hover:text-secondary transition-colors"
+                >Eyelash Extensions</a
+              >
+              <a href="#" class="hover:text-secondary transition-colors"
+                >Waxing</a
+              >
+            </div>
+          </div>
+
+          <div class="text-center">
+            <h4 class="text-lg font-semibold text-secondary mb-4">Contact</h4>
+            <div class="space-y-2 text-gray-300 text-sm">
+              <p>Address: 768 Mono Way, Sonora, CA, United States, 95370</p>
+              <p>Phone: +1 209-533-4828</p>
+              <p>Email: vipnailsandspaca@outlook.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-700 mt-6 pt-6 text-center text-gray-400 text-sm"
+        >
+          <p>
+            &copy; <span id="copyright-year"></span> Lisa Nail And Spa. All
+            rights reserved.
+          </p>
+          <script>
+            document.getElementById("copyright-year").textContent =
+              new Date().getFullYear();
+          </script>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button
+      id="back-to-top"
+      class="fixed bottom-6 right-6 z-50 bg-secondary hover:bg-secondary/90 text-primary p-3 rounded-full shadow-lg transition-all duration-300 opacity-0 invisible transform translate-y-4 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 focus:ring-offset-primary"
+      aria-label="Back to top"
+    >
+      <svg
+        class="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M5 10l7-7m0 0l7 7m-7-7v18"
+        />
+      </svg>
+    </button>
+
+    <script>
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+            // Close mobile sidebar if open
+            closeMobileSidebar();
+          }
+        });
+      });
+
+      // Mobile sidebar functionality
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileSidebar = document.getElementById("mobile-sidebar");
+      const closeSidebarButton = document.getElementById("close-sidebar");
+      const sidebarBackdrop = document.getElementById("sidebar-backdrop");
+      const menuIcon = document.getElementById("menu-icon");
+      const closeIcon = document.getElementById("close-icon");
+
+      function openMobileSidebar() {
+        mobileSidebar.classList.remove("hidden");
+        mobileSidebar.classList.add("show");
+        document.body.classList.add("sidebar-open");
+
+        // Trigger animations
+        setTimeout(() => {
+          sidebarBackdrop.style.opacity = "1";
+          document.getElementById("sidebar-panel").style.transform =
+            "translateX(0)";
+        }, 10);
+
+        // Toggle icons
+        menuIcon.classList.add("hidden");
+        closeIcon.classList.remove("hidden");
+      }
+
+      function closeMobileSidebar() {
+        sidebarBackdrop.style.opacity = "0";
+        document.getElementById("sidebar-panel").style.transform =
+          "translateX(100%)";
+
+        setTimeout(() => {
+          mobileSidebar.classList.add("hidden");
+          mobileSidebar.classList.remove("show");
+          document.body.classList.remove("sidebar-open");
+        }, 300);
+
+        // Toggle icons
+        menuIcon.classList.remove("hidden");
+        closeIcon.classList.add("hidden");
+      }
+
+      // Event listeners
+      mobileMenuButton.addEventListener("click", openMobileSidebar);
+      closeSidebarButton.addEventListener("click", closeMobileSidebar);
+      sidebarBackdrop.addEventListener("click", closeMobileSidebar);
+
+      // Close sidebar on escape key
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && mobileSidebar.classList.contains("show")) {
+          closeMobileSidebar();
+        }
+      });
+
+      // Close sidebar when clicking on mobile nav links
+      document.querySelectorAll(".mobile-nav-link").forEach((link) => {
+        link.addEventListener("click", closeMobileSidebar);
+      });
+
+      // Handle window resize
+      window.addEventListener("resize", () => {
+        if (
+          window.innerWidth >= 768 &&
+          mobileSidebar.classList.contains("show")
+        ) {
+          closeMobileSidebar();
+        }
+      });
+
+      // Back to Top functionality
+      const backToTopButton = document.getElementById("back-to-top");
+
+      // Show/hide button based on scroll position
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+          backToTopButton.classList.remove(
+            "opacity-0",
+            "invisible",
+            "translate-y-4"
+          );
+          backToTopButton.classList.add(
+            "opacity-100",
+            "visible",
+            "translate-y-0"
+          );
+        } else {
+          backToTopButton.classList.add(
+            "opacity-0",
+            "invisible",
+            "translate-y-4"
+          );
+          backToTopButton.classList.remove(
+            "opacity-100",
+            "visible",
+            "translate-y-0"
+          );
+        }
+      });
+
+      // Smooth scroll to top when button is clicked
+      backToTopButton.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+
+      // Add keyboard support
+      backToTopButton.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
