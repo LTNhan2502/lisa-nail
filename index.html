@@ -36,11 +36,11 @@
             <img
               src="./img/logo.jpg"
               alt="Lisa Nail & Spa Logo"
-              class="w-14 h-14 rounded-full shadow-lg border-2 border-secondary bg-white object-contain"
+              class="w-12 h-12 rounded-full shadow-lg border-2 border-secondary bg-white object-contain"
               loading="lazy"
             />
             <h2
-              class="text-3xl font-black tracking-wide text-gradient mb-2"
+              class="text-xl md:text-2xl font-bold tracking-wide text-gradient mb-2"
               style="
                 background: linear-gradient(
                   90deg,
@@ -606,7 +606,7 @@
             – luxury, comfort, and beauty.<br />
             Relax and let us pamper you.<br />
             <span class="block mt-3">
-              At Lisa Nail & Spa, we are passionate about delivering a luxurious and relaxing experience with top-notch service and attention to detail. Our skilled team is dedicated to making you feel refreshed, beautiful, and truly cared for from the moment you walk through our doors.
+              At Lisa Nail & Spa, your comfort and satisfaction come first. Our skilled, friendly team delivers exceptional service and care in a relaxing, welcoming space. Let us refresh your look and spirit—so you leave feeling pampered and beautiful.
             </span>
           </p>
           <div
@@ -642,14 +642,6 @@
                 >Royal Ambience</span
               >
             </div>
-          </div>
-          <div class="mt-8 mb-4 text-center md:text-left">
-            <a
-              href="#contact"
-              class="inline-block px-8 py-3 rounded-full shadow-lg bg-gradient-to-r from-[#FFD700] to-[#fbd200] text-primary font-bold text-lg tracking-wide hover:from-[#fbd200] hover:to-[#FFD700] hover:text-yellow-900 transition-colors duration-200 border border-yellow-300 focus:outline-none focus:ring-2 focus:ring-secondary/70"
-            >
-              Book Now
-            </a>
           </div>
         </div>
         <!-- Image Block (now on the right), square format -->
@@ -1393,137 +1385,356 @@
             WHAT OUR CUSTOMERS SAY
           </h2>
         </div>
-        <div class="grid md:grid-cols-3 gap-8">
-          <!-- Card 1 -->
-          <div
-            class="group relative p-6 border-2 border-gray-800 rounded-lg bg-black shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-black/60 testimonial-card-shimmer fade-in-up-testimonials"
-            style="overflow: hidden; transition-delay:.17s"
-            data-card-index="1"
-          >
-            <!-- Shimmer overlay -->
-            <div class="shimmer-effect pointer-events-none"></div>
-            <div
-              class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-[#fbd200] via-orange-200 to-[#fbd200] rounded-t-xl opacity-70"
-            ></div>
-            <div class="flex items-center space-x-4 mb-4">
-              <img
-                src="https://randomuser.me/api/portraits/women/68.jpg"
-                alt="avatar"
-                class="w-14 h-14 rounded-full object-cover border-4 border-gray-800 group-hover:border-gray-600 shadow-lg transition"
-              />
-              <div>
-                <div class="font-semibold text-base text-[#fbd200]">
-                  Anna Tran
-                </div>
+        <!-- Swiper CSS (cdn) -->
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+
+        <!-- Swiper -->
+        <div class="swiper testimonial-swiper fade-in-up-testimonials">
+          <div class="swiper-wrapper">
+            <!-- Card 1 -->
+            <div class="swiper-slide h-auto flex">
+              <div
+                class="group relative p-6 border-2 border-gray-800 rounded-lg bg-black shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-black/60 testimonial-card-shimmer w-full flex flex-col"
+                style="overflow: hidden;"
+                data-card-index="1"
+              >
+                <!-- Shimmer overlay -->
+                <div class="shimmer-effect pointer-events-none"></div>
                 <div
-                  class="flex text-yellow-400 text-lg space-x-1 animate-pulse group-hover:animate-none"
-                >
-                  <span>★</span><span>★</span><span>★</span><span>★</span
-                  ><span>★</span>
+                  class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-[#fbd200] via-orange-200 to-[#fbd200] rounded-t-xl opacity-70"
+                ></div>
+                <div class="flex items-center space-x-4 mb-4">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/68.jpg"
+                    alt="avatar"
+                    class="w-14 h-14 rounded-full object-cover border-4 border-gray-800 group-hover:border-gray-600 shadow-lg transition"
+                  />
+                  <div>
+                    <div class="font-semibold text-base text-[#fbd200]">
+                      Anna Tran
+                    </div>
+                    <div
+                      class="flex text-yellow-400 text-lg space-x-1 animate-pulse group-hover:animate-none"
+                    >
+                      <span>★</span><span>★</span><span>★</span><span>★</span
+                      ><span>★</span>
+                    </div>
+                    <div
+                      class="mt-1 text-xs border border-[#fbd200] text-gray-200 px-2 py-1 rounded-full shadow inline-block font-semibold"
+                    >
+                      VIP Customer
+                    </div>
+                  </div>
                 </div>
-                <div
-                  class="mt-1 text-xs border border-[#fbd200] text-gray-200 px-2 py-1 rounded-full shadow inline-block font-semibold"
-                >
-                  VIP Customer
+                <div class="flex-1 flex items-center">
+                  <p
+                    class="text-base text-gray-200 text-center w-full italic opacity-95 transition group-hover:text-[#fbd200] group-hover:opacity-100"
+                  >
+                    "Amazing service! The staff are professional, the vibe is so
+                    relaxing. I'm really satisfied with the result."
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="flex-1 flex items-center">
-              <p
-                class="text-base text-gray-200 text-center w-full italic opacity-95 transition group-hover:text-[#fbd200] group-hover:opacity-100"
+            <!-- Card 2 -->
+            <div class="swiper-slide h-auto flex">
+              <div
+                class="group relative p-6 border-2 border-gray-800 rounded-lg bg-black shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-black/60 testimonial-card-shimmer w-full flex flex-col"
+                style="overflow: hidden;"
+                data-card-index="2"
               >
-                "Amazing service! The staff are professional, the vibe is so
-                relaxing. I'm really satisfied with the result."
-              </p>
-            </div>
-          </div>
-          <!-- Card 2 -->
-          <div
-            class="group relative p-6 border-2 border-gray-800 rounded-lg bg-black shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-black/60 testimonial-card-shimmer fade-in-up-testimonials"
-            style="overflow: hidden; transition-delay:.26s"
-            data-card-index="2"
-          >
-            <!-- Shimmer overlay -->
-            <div class="shimmer-effect pointer-events-none"></div>
-            <div
-              class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-[#fbd200] via-orange-200 to-[#fbd200] rounded-t-xl opacity-70"
-            ></div>
-            <div class="flex items-center space-x-4 mb-4">
-              <img
-                src="https://randomuser.me/api/portraits/women/60.jpg"
-                alt="avatar"
-                class="w-14 h-14 rounded-full object-cover border-4 border-gray-800 group-hover:border-gray-600 shadow-lg transition"
-              />
-              <div>
-                <div class="font-semibold text-base text-[#fbd200]">
-                  Michelle Nguyen
-                </div>
+                <!-- Shimmer overlay -->
+                <div class="shimmer-effect pointer-events-none"></div>
                 <div
-                  class="flex text-yellow-400 text-lg space-x-1 animate-pulse group-hover:animate-none"
-                >
-                  <span>★</span><span>★</span><span>★</span><span>★</span
-                  ><span>★</span>
+                  class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-[#fbd200] via-orange-200 to-[#fbd200] rounded-t-xl opacity-70"
+                ></div>
+                <div class="flex items-center space-x-4 mb-4">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/60.jpg"
+                    alt="avatar"
+                    class="w-14 h-14 rounded-full object-cover border-4 border-gray-800 group-hover:border-gray-600 shadow-lg transition"
+                  />
+                  <div>
+                    <div class="font-semibold text-base text-[#fbd200]">
+                      Michelle Nguyen
+                    </div>
+                    <div
+                      class="flex text-yellow-400 text-lg space-x-1 animate-pulse group-hover:animate-none"
+                    >
+                      <span>★</span><span>★</span><span>★</span><span>★</span
+                      ><span>★</span>
+                    </div>
+                    <div
+                      class="mt-1 text-xs border border-[#fbd200] text-gray-200 px-2 py-1 rounded-full shadow inline-block font-semibold"
+                    >
+                      Loyal Customer
+                    </div>
+                  </div>
                 </div>
-                <div
-                  class="mt-1 text-xs border border-[#fbd200] text-gray-200 px-2 py-1 rounded-full shadow inline-block font-semibold"
-                >
-                  Loyal Customer
+                <div class="flex-1 flex items-center">
+                  <p
+                    class="text-base text-gray-200 text-center w-full italic opacity-95 transition group-hover:text-[#fbd200] group-hover:opacity-100"
+                  >
+                    "The foot massage was super relaxing, and the technicians are
+                    very skilled. I'll definitely come back next time!"
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="flex-1 flex items-center">
-              <p
-                class="text-base text-gray-200 text-center w-full italic opacity-95 transition group-hover:text-[#fbd200] group-hover:opacity-100"
+            <!-- Card 3 -->
+            <div class="swiper-slide h-auto flex">
+              <div
+                class="group relative p-6 border-2 border-gray-800 rounded-lg bg-black shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-black/60 testimonial-card-shimmer w-full flex flex-col"
+                style="overflow: hidden;"
+                data-card-index="3"
               >
-                "The foot massage was super relaxing, and the technicians are
-                very skilled. I'll definitely come back next time!"
-              </p>
-            </div>
-          </div>
-          <!-- Card 3 -->
-          <div
-            class="group relative p-6 border-2 border-gray-800 rounded-lg bg-black shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-black/60 testimonial-card-shimmer fade-in-up-testimonials"
-            style="overflow: hidden; transition-delay:.33s"
-            data-card-index="3"
-          >
-            <!-- Shimmer overlay -->
-            <div class="shimmer-effect pointer-events-none"></div>
-            <div
-              class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-[#fbd200] via-orange-200 to-[#fbd200] rounded-t-xl opacity-70"
-            ></div>
-            <div class="flex items-center space-x-4 mb-4">
-              <img
-                src="https://randomuser.me/api/portraits/women/65.jpg"
-                alt="avatar"
-                class="w-14 h-14 rounded-full object-cover border-4 border-gray-800 group-hover:border-gray-600 shadow-lg transition"
-              />
-              <div>
-                <div class="font-semibold text-base text-[#fbd200]">
-                  Linda Le
-                </div>
+                <!-- Shimmer overlay -->
+                <div class="shimmer-effect pointer-events-none"></div>
                 <div
-                  class="flex text-yellow-400 text-lg space-x-1 animate-pulse group-hover:animate-none"
-                >
-                  <span>★</span><span>★</span><span>★</span><span>★</span
-                  ><span>★</span>
+                  class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-[#fbd200] via-orange-200 to-[#fbd200] rounded-t-xl opacity-70"
+                ></div>
+                <div class="flex items-center space-x-4 mb-4">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/65.jpg"
+                    alt="avatar"
+                    class="w-14 h-14 rounded-full object-cover border-4 border-gray-800 group-hover:border-gray-600 shadow-lg transition"
+                  />
+                  <div>
+                    <div class="font-semibold text-base text-[#fbd200]">
+                      Linda Le
+                    </div>
+                    <div
+                      class="flex text-yellow-400 text-lg space-x-1 animate-pulse group-hover:animate-none"
+                    >
+                      <span>★</span><span>★</span><span>★</span><span>★</span
+                      ><span>★</span>
+                    </div>
+                    <div
+                      class="mt-1 text-xs border border-[#fbd200] text-gray-200 px-2 py-1 rounded-full shadow inline-block font-semibold"
+                    >
+                      New Customer
+                    </div>
+                  </div>
                 </div>
-                <div
-                  class="mt-1 text-xs border border-[#fbd200] text-gray-200 px-2 py-1 rounded-full shadow inline-block font-semibold"
-                >
-                  New Customer
+                <div class="flex-1 flex items-center">
+                  <p
+                    class="text-base text-gray-200 text-center w-full italic opacity-95 transition group-hover:text-[#fbd200] group-hover:opacity-100"
+                  >
+                    "The facials were so effective! My skin improved a lot after
+                    just three treatments. Thank you, Lisa Nail And Spa!"
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="flex-1 flex items-center">
-              <p
-                class="text-base text-gray-200 text-center w-full italic opacity-95 transition group-hover:text-[#fbd200] group-hover:opacity-100"
+            <!-- Card 4 - NEW -->
+            <div class="swiper-slide h-auto flex">
+              <div
+                class="group relative p-6 border-2 border-gray-800 rounded-lg bg-black shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-black/60 testimonial-card-shimmer w-full flex flex-col"
+                style="overflow: hidden;"
+                data-card-index="4"
               >
-                "The facials were so effective! My skin improved a lot after
-                just three treatments. Thank you, Lisa Nail And Spa!"
-              </p>
+                <!-- Shimmer overlay -->
+                <div class="shimmer-effect pointer-events-none"></div>
+                <div
+                  class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-[#fbd200] via-orange-200 to-[#fbd200] rounded-t-xl opacity-70"
+                ></div>
+                <div class="flex items-center space-x-4 mb-4">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/12.jpg"
+                    alt="avatar"
+                    class="w-14 h-14 rounded-full object-cover border-4 border-gray-800 group-hover:border-gray-600 shadow-lg transition"
+                  />
+                  <div>
+                    <div class="font-semibold text-base text-[#fbd200]">
+                      James Vo
+                    </div>
+                    <div
+                      class="flex text-yellow-400 text-lg space-x-1 animate-pulse group-hover:animate-none"
+                    >
+                      <span>★</span><span>★</span><span>★</span><span>★</span
+                      ><span>★</span>
+                    </div>
+                    <div
+                      class="mt-1 text-xs border border-[#fbd200] text-gray-200 px-2 py-1 rounded-full shadow inline-block font-semibold"
+                    >
+                      Local Guide
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-1 flex items-center">
+                  <p
+                    class="text-base text-gray-200 text-center w-full italic opacity-95 transition group-hover:text-[#fbd200] group-hover:opacity-100"
+                  >
+                    "Spotless and modern salon. The nail art exceeded my expectations and lasted so long. Highly recommended!"
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 5 - NEW -->
+            <div class="swiper-slide h-auto flex">
+              <div
+                class="group relative p-6 border-2 border-gray-800 rounded-lg bg-black shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-black/60 testimonial-card-shimmer w-full flex flex-col"
+                style="overflow: hidden;"
+                data-card-index="5"
+              >
+                <!-- Shimmer overlay -->
+                <div class="shimmer-effect pointer-events-none"></div>
+                <div
+                  class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-[#fbd200] via-orange-200 to-[#fbd200] rounded-t-xl opacity-70"
+                ></div>
+                <div class="flex items-center space-x-4 mb-4">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/72.jpg"
+                    alt="avatar"
+                    class="w-14 h-14 rounded-full object-cover border-4 border-gray-800 group-hover:border-gray-600 shadow-lg transition"
+                  />
+                  <div>
+                    <div class="font-semibold text-base text-[#fbd200]">
+                      Emily Pham
+                    </div>
+                    <div
+                      class="flex text-yellow-400 text-lg space-x-1 animate-pulse group-hover:animate-none"
+                    >
+                      <span>★</span><span>★</span><span>★</span><span>★</span
+                      ><span>★</span>
+                    </div>
+                    <div
+                      class="mt-1 text-xs border border-[#fbd200] text-gray-200 px-2 py-1 rounded-full shadow inline-block font-semibold"
+                    >
+                      Regular Customer
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-1 flex items-center">
+                  <p
+                    class="text-base text-gray-200 text-center w-full italic opacity-95 transition group-hover:text-[#fbd200] group-hover:opacity-100"
+                  >
+                    "Clean, cozy, and friendly staff. The prices are great and my nails always turn out perfectly beautiful!"
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 6 - NEW -->
+            <div class="swiper-slide h-auto flex">
+              <div
+                class="group relative p-6 border-2 border-gray-800 rounded-lg bg-black shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-black/60 testimonial-card-shimmer w-full flex flex-col"
+                style="overflow: hidden;"
+                data-card-index="6"
+              >
+                <!-- Shimmer overlay -->
+                <div class="shimmer-effect pointer-events-none"></div>
+                <div
+                  class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-[#fbd200] via-orange-200 to-[#fbd200] rounded-t-xl opacity-70"
+                ></div>
+                <div class="flex items-center space-x-4 mb-4">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/39.jpg"
+                    alt="avatar"
+                    class="w-14 h-14 rounded-full object-cover border-4 border-gray-800 group-hover:border-gray-600 shadow-lg transition"
+                  />
+                  <div>
+                    <div class="font-semibold text-base text-[#fbd200]">
+                      David Chen
+                    </div>
+                    <div
+                      class="flex text-yellow-400 text-lg space-x-1 animate-pulse group-hover:animate-none"
+                    >
+                      <span>★</span><span>★</span><span>★</span><span>★</span
+                      ><span>★</span>
+                    </div>
+                    <div
+                      class="mt-1 text-xs border border-[#fbd200] text-gray-200 px-2 py-1 rounded-full shadow inline-block font-semibold"
+                    >
+                      Walk-in Guest
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-1 flex items-center">
+                  <p
+                    class="text-base text-gray-200 text-center w-full italic opacity-95 transition group-hover:text-[#fbd200] group-hover:opacity-100"
+                  >
+                    "Super fast, efficient, and courteous service! If you need a quick manicure before an event, look no further."
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
+          <!-- Swiper pagination/controls -->
+          <div class="swiper-pagination mt-8"></div>
         </div>
+        <style>
+          .testimonial-swiper .swiper-pagination {
+            margin-top: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative !important;
+            width: 100% !important;
+            z-index: 10;
+            /* make sure it's visible */
+          }
+          .testimonial-swiper .swiper-pagination-bullet {
+            background: #ffd700 !important;
+            opacity: 0.6 !important;
+            transition: opacity .25s;
+            width: 13px;
+            height: 13px;
+            margin: 0 6px !important;
+            box-shadow: 0 2px 8px #0001;
+          }
+          .testimonial-swiper .swiper-pagination-bullet-active {
+            opacity: 1 !important;
+            background: #ffd700 !important;
+            box-shadow: 0 0 0 2px #fff7ae88;
+          }
+        </style>
+
+        <!-- Swiper JS (cdn) -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            var testimonialSwiper = new Swiper('.testimonial-swiper', {
+              slidesPerView: 1,
+              spaceBetween: 32,
+              loop: true,
+              speed: 650,
+              autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true
+              },
+              pagination: {
+                el: '.testimonial-swiper .swiper-pagination',
+                clickable: true,
+              },
+              breakpoints: {
+                768: {
+                  slidesPerView: 2,
+                },
+                1024: {
+                  slidesPerView: 3,
+                }
+              }
+            });
+
+            // For animation fade-in on visible
+            var testSwiper = document.querySelector('.testimonial-swiper');
+            if (window.IntersectionObserver && testSwiper) {
+              var obs = new window.IntersectionObserver(function (ents, observer) {
+                ents.forEach(function (entry) {
+                  if (entry.isIntersecting) {
+                    testSwiper.classList.add('visible');
+                    observer.unobserve(testSwiper);
+                  }
+                });
+              }, { threshold: 0.13 });
+              obs.observe(testSwiper);
+            }
+          });
+        </script>
         <!-- <div class="mt-12 flex justify-center"> ... </div> -->
       </div>
       <style>
