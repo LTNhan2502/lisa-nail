@@ -33,6 +33,12 @@
         <div class="flex h-16 items-center justify-between">
           <!-- Logo -->
           <a href="#home" class="flex items-center space-x-2">
+            <img
+              src="./img/logo.jpg"
+              alt="Lisa Nail & Spa Logo"
+              class="w-14 h-14 rounded-full shadow-lg border-2 border-secondary bg-white object-contain"
+              loading="lazy"
+            />
             <h2
               class="text-3xl font-black tracking-wide text-gradient mb-2"
               style="
@@ -1820,12 +1826,6 @@
             </h4>
             <ul class="mt-1 space-y-1 text-gray-200 text-base font-medium">
               <li>
-                <a href="#home" class="hover:text-yellow-300 transition flex items-center gap-2">
-                  <span class="inline-block w-2 h-2 bg-secondary rounded-full"></span>
-                  Home
-                </a>
-              </li>
-              <li>
                 <a href="#about" class="hover:text-yellow-300 transition flex items-center gap-2">
                   <span class="inline-block w-2 h-2 bg-secondary rounded-full"></span>
                   About
@@ -1852,8 +1852,8 @@
             </ul>
           </div>
 
-          <!-- Quick Links column -->
-          <div class="md:w-1/5 flex flex-col items-center md:items-start mb-8 md:mb-0">
+          <!-- Why Choose Us column -->
+          <!-- <div class="md:w-1/5 flex flex-col items-center md:items-start mb-8 md:mb-0">
             <h4
               class="text-xl font-semibold text-secondary mb-2 tracking-wide uppercase"
             >
@@ -1885,21 +1885,23 @@
                 </a>
               </li>
             </ul>
-          </div>
-          
-
-          <!-- NEW - Opening Hours/Why Choose Us Column -->
-          <!-- <div class="md:w-1/5 flex flex-col items-center md:items-start mb-8 md:mb-0">
-            <h4 class="text-lg font-semibold text-secondary mb-1 tracking-wide uppercase">
-              Why Choose Us?
-            </h4>
-            <ul class="list-disc list-inside text-gray-300 text-sm opacity-90 space-y-1">
-              <li>Clean, hygienic environment</li>
-              <li>Professional staff</li>
-              <li>Premium products</li>
-              <li>Relaxing atmosphere</li>
-            </ul>
           </div> -->
+          
+          <!-- Opening Hours column (ADDED) -->
+          <div class="md:w-1/5 flex flex-col items-center md:items-start mb-8 md:mb-0">
+            <h4 class="text-xl font-semibold text-secondary mb-2 tracking-wide uppercase">
+              Business Hours
+            </h4>
+            <div class=" w-full">
+              <div class="flex items-center mb-2">
+                <span class="text-secondary font-medium text-lg tracking-wide">Open Daily</span>
+              </div>
+              <div class="flex flex-col text-gray-200">
+                <span class="font-medium">Monday - Sunday</span>
+                <span class="font-semibold text-yellow-300 text-lg">9:30AM - 7:00PM</span>
+              </div>
+            </div>
+          </div>
 
           <!-- Contact column -->
           <div class="md:w-1/5 flex flex-col items-center md:items-start">
