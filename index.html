@@ -45,7 +45,12 @@
             <h2
               class="text-xl md:text-2xl font-bold tracking-wide text-gradient mb-2"
               style="
-                background: linear-gradient(to bottom, #b88b28, #EDCA7B, #b88b28);
+                background: linear-gradient(
+                  to bottom,
+                  #b88b28,
+                  #edca7b,
+                  #b88b28
+                );
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
               "
@@ -302,7 +307,7 @@
                   </svg>
                   <span class="font-medium">FAQs</span>
                 </a>
-              </li>              
+              </li>
               <li>
                 <a
                   href="#contact"
@@ -482,7 +487,7 @@
                 <div class="text-center">
                   <div
                     class="font-serif text-2xl md:text-3xl font-bold text-[#edca7b] counter duration-700"
-                    data-target="10"
+                    data-target="15"
                   >
                     0+
                   </div>
@@ -491,7 +496,7 @@
                 <div class="text-center">
                   <div
                     class="font-serif text-2xl md:text-3xl font-bold text-[#edca7b] counter duration-700"
-                    data-target="5000"
+                    data-target="15000"
                   >
                     0+
                   </div>
@@ -598,9 +603,9 @@
               .hero-carousel-3d-container {
                 perspective: 1200px;
                 width: 100%;
-                max-width: 430px;
+                max-width: 525px;
                 margin: 0 auto 1.5rem auto;
-                height: 270px;
+                height: 340px;
                 position: relative;
                 overflow: visible;
                 pointer-events: none;
@@ -609,33 +614,33 @@
                 width: 100%;
                 height: 100%;
                 position: absolute;
-                top: 0; left: 0;
+                top: 0;
+                left: 0;
                 transform-style: preserve-3d;
                 will-change: transform;
                 pointer-events: none;
               }
               .hero-carousel-3d-img {
                 position: absolute;
-                width: 242px;
-                height: 308px;
-                left: 50%; top: 50%;
+                width: 290px;
+                height: 368px;
+                left: 50%;
+                top: 50%;
                 transform-style: preserve-3d;
-                border-radius: 14px;
+                border-radius: 18px;
                 object-fit: cover;
                 box-shadow: 0 3px 22px 0 rgba(255, 222, 100, 0.14);
                 cursor: pointer;
-                border: 2.5px solid rgba(255,255,193,0.22);
-                transition: 
-                  box-shadow .25s, 
-                  border-color .3s,
-                  transform .21s cubic-bezier(.39,.27,.21,1.13);
+                border: 2.5px solid rgba(255, 255, 193, 0.22);
+                transition: box-shadow 0.25s, border-color 0.3s,
+                  transform 0.21s cubic-bezier(0.39, 0.27, 0.21, 1.13);
                 background: #181813;
                 /* Center image origin for nice hover scale effect */
                 transform: translate(-50%, -50%);
                 pointer-events: auto;
               }
               .hero-carousel-3d-img:hover {
-                box-shadow: 0 5px 34px 0 rgba(255,230,100,0.22);
+                box-shadow: 0 5px 34px 0 rgba(255, 230, 100, 0.22);
                 border-color: #ffe65a;
                 z-index: 10;
                 transform: translate(-50%, -50%) scale(1.095);
@@ -645,23 +650,52 @@
                 display: none;
               }
               @media (max-width: 480px) {
-                .hero-carousel-3d-container { max-width: 99vw; height: 162px; }
-                .hero-carousel-3d-img { width: 66px; height: 86px; border-radius: 8px; }
+                .hero-carousel-3d-container {
+                  max-width: 99vw;
+                  height: 200px;
+                }
+                .hero-carousel-3d-img {
+                  width: 84px;
+                  height: 109px;
+                  border-radius: 10px;
+                }
               }
             </style>
             <div class="hero-carousel-3d-container">
               <div class="hero-carousel-3d" id="hero-carousel3d">
-                <img src="./img/g_t_01.jpg" alt="Carousel Img 1" class="hero-carousel-3d-img" />
-                <img src="./img/gallery_01.jpg" alt="Carousel Img 2" class="hero-carousel-3d-img" />
-                <img src="./img/luxury-nail-salon-manicure-elegant-hands-with-perf.jpg" alt="Carousel Img 3" class="hero-carousel-3d-img" />
-                <img src="./img/g_t_02.jpg" alt="Carousel Img 5" class="hero-carousel-3d-img" />
-                <img src="./img/nail6.webp" alt="Carousel Img 4" class="hero-carousel-3d-img" />
+                <img
+                  src="./img/g_t_02.jpg"
+                  alt="Carousel Img 5"
+                  class="hero-carousel-3d-img"
+                />
+                <img
+                  src="./img/g_t_04.jpg"
+                  alt="Carousel Img 2"
+                  class="hero-carousel-3d-img"
+                />
+                <img
+                  src="./img/g_t_03.jpg"
+                  alt="Carousel Img 4"
+                  class="hero-carousel-3d-img"
+                />
+                <img
+                  src="./img/luxury-nail-salon-manicure-elegant-hands-with-perf.jpg"
+                  alt="Carousel Img 3"
+                  class="hero-carousel-3d-img"
+                />
+                <img
+                  src="./img/gallery_12.jpg"
+                  alt="Carousel Img 4"
+                  class="hero-carousel-3d-img"
+                />
               </div>
             </div>
             <script>
               (function () {
                 const carousel = document.getElementById("hero-carousel3d");
-                const images = carousel.querySelectorAll(".hero-carousel-3d-img");
+                const images = carousel.querySelectorAll(
+                  ".hero-carousel-3d-img"
+                );
                 const imgCount = images.length;
                 const theta = 360 / imgCount;
                 const radius = 240;
@@ -670,9 +704,8 @@
 
                 images.forEach((img, i) => {
                   const rot = theta * i;
-                  img.style.transform =
-                    `translate(-50%, -50%) rotateY(${rot}deg) translateZ(${radius}px) rotateX(${tilt}deg)`;
-                  img.setAttribute('tabindex', 0);
+                  img.style.transform = `translate(-50%, -50%) rotateY(${rot}deg) translateZ(${radius}px) rotateX(${tilt}deg)`;
+                  img.setAttribute("tabindex", 0);
                 });
 
                 function animate(ts) {
@@ -733,7 +766,12 @@
             <h2
               class="text-start text-3xl md:text-4xl lg:text-5xl font-medium font-black tracking-wide text-gradient mb-2"
               style="
-                background: linear-gradient(to bottom, #b88b28, #EDCA7B, #b88b28);
+                background: linear-gradient(
+                  to bottom,
+                  #b88b28,
+                  #edca7b,
+                  #b88b28
+                );
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
               "
@@ -744,17 +782,28 @@
           <div
             class="w-20 h-1 rounded-full mx-auto md:mx-0 mb-5 bg-gradient-to-r from-[#ffe289] via-[#edca7b] to-[#c7b366]"
           ></div>
-          <div class="text-lg md:text-xl leading-relaxed text-center md:text-left text-gray-100 max-w-2xl font-medium opacity-95 mb-6">
+          <div
+            class="text-lg md:text-xl leading-relaxed text-center md:text-left text-gray-100 max-w-2xl font-medium opacity-95 mb-6"
+          >
             <p>
-              <span class="font-bold text-[#edca7b] tracking-wider">LISA Nails and Spa</span>
-              is a luxury retreat for beauty and relaxation, located at 
-              <span class="font-bold text-[#edca7b]">768 Mono Way, Sonora, CA, United States, California</span>
+              <span class="font-bold text-[#edca7b] tracking-wider"
+                >LISA Nails and Spa</span
+              >
+              is a luxury retreat for beauty and relaxation, located at
+              <span class="font-bold text-[#edca7b]"
+                >768 Mono Way, Sonora, CA, United States, California</span
+              >
             </p>
             <p class="mt-4">
-              We specialize in premium nail and spa services delivered in a serene, spotless environment. Every treatment is designed to elevate your confidence and comfort, using top-tier products and expert care.
+              We specialize in premium nail and spa services delivered in a
+              serene, spotless environment. Every treatment is designed to
+              elevate your confidence and comfort, using top-tier products and
+              expert care.
             </p>
             <p class="mt-4">
-              Whether you’re here for a quick refresh or a full pampering session, our skilled technicians ensure every visit feels indulgent and unforgettable.
+              Whether you’re here for a quick refresh or a full pampering
+              session, our skilled technicians ensure every visit feels
+              indulgent and unforgettable.
             </p>
             <p class="mt-4 flex items-center justify-center md:justify-start">
               <span class="mr-2">
@@ -859,7 +908,7 @@
           <h2
             class="text-3xl md:text-4xl lg:text-5xl font-medium font-black tracking-wide text-gradient mb-2 fade-in-up"
             style="
-              background: linear-gradient(to bottom, #b88b28, #EDCA7B, #b88b28);
+              background: linear-gradient(to bottom, #b88b28, #edca7b, #b88b28);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
             "
@@ -878,11 +927,15 @@
               class="bg-white/10 rounded-lg shadow-xl overflow-hidden border border-yellow-300 fade-in-up delay-300"
             >
               <div class="p-6 pb-2">
-                <h3 class="text-3xl font-bold text-[#edca7b] tracking-wide text-center">
+                <h3
+                  class="text-3xl font-bold text-[#edca7b] tracking-wide text-center"
+                >
                   Acrylic Full Set
                 </h3>
                 <div class="flex items-center w-full my-1">
-                  <div class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                  <div
+                    class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
+                  ></div>
                   <span class="mx-4 flex items-center justify-center">
                     <svg
                       width="28"
@@ -920,20 +973,28 @@
                       </defs>
                     </svg>
                   </span>
-                  <div class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                  <div
+                    class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
+                  ></div>
                 </div>
                 <div class="space-y-4 mt-4">
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Fiber Glass</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$40+</span>
                   </div>
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Pink & White</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$55</span>
                   </div>
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Full Set with Shellac</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$45</span>
@@ -946,11 +1007,15 @@
               class="bg-white/10 rounded-lg shadow-xl overflow-hidden border border-yellow-300 fade-in-up delay-400"
             >
               <div class="p-6 pb-2">
-                <h3 class="text-3xl font-bold text-[#edca7b] tracking-wide text-center">
+                <h3
+                  class="text-3xl font-bold text-[#edca7b] tracking-wide text-center"
+                >
                   Acrylic Fill
                 </h3>
                 <div class="flex items-center w-full my-1">
-                  <div class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                  <div
+                    class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
+                  ></div>
                   <span class="mx-4 flex items-center justify-center">
                     <svg
                       width="28"
@@ -988,20 +1053,28 @@
                       </defs>
                     </svg>
                   </span>
-                  <div class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                  <div
+                    class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
+                  ></div>
                 </div>
                 <div class="space-y-4 mt-4">
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Regular Fill</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$30+</span>
                   </div>
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Fill and Clean Cuticle</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$40+</span>
                   </div>
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Fill with Shellac</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$35</span>
@@ -1014,11 +1087,15 @@
               class="bg-white/10 rounded-lg shadow-xl overflow-hidden border border-yellow-300 fade-in-up delay-500"
             >
               <div class="p-6 pb-2">
-                <h3 class="text-3xl font-bold text-[#edca7b] tracking-wide text-center">
+                <h3
+                  class="text-3xl font-bold text-[#edca7b] tracking-wide text-center"
+                >
                   Dips
                 </h3>
                 <div class="flex items-center w-full my-1">
-                  <div class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                  <div
+                    class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
+                  ></div>
                   <span class="mx-4 flex items-center justify-center">
                     <svg
                       width="28"
@@ -1056,15 +1133,21 @@
                       </defs>
                     </svg>
                   </span>
-                  <div class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                  <div
+                    class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
+                  ></div>
                 </div>
                 <div class="space-y-4 mt-4">
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Dip Full Set</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$50+</span>
                   </div>
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Dip Pink and White</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$60</span>
@@ -1081,11 +1164,15 @@
               class="bg-white/10 rounded-lg shadow-xl overflow-hidden border border-yellow-300 fade-in-up delay-350"
             >
               <div class="p-6 pb-2">
-                <h3 class="text-3xl font-bold text-[#edca7b] tracking-wide text-center">
+                <h3
+                  class="text-3xl font-bold text-[#edca7b] tracking-wide text-center"
+                >
                   Manicure
                 </h3>
                 <div class="flex items-center w-full my-1">
-                  <div class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                  <div
+                    class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
+                  ></div>
                   <span class="mx-4 flex items-center justify-center">
                     <svg
                       width="28"
@@ -1123,20 +1210,28 @@
                       </defs>
                     </svg>
                   </span>
-                  <div class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                  <div
+                    class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
+                  ></div>
                 </div>
                 <div class="space-y-5 mt-4">
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Regular Manicure</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$15</span>
                   </div>
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Gel Manicure</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$35</span>
                   </div>
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Deluxe Manicure</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$25</span>
@@ -1149,11 +1244,15 @@
               class="bg-white/10 rounded-lg shadow-xl overflow-hidden border border-yellow-300 fade-in-up delay-450"
             >
               <div class="p-6 pb-2">
-                <h3 class="text-3xl font-bold text-[#edca7b] tracking-wide text-center">
+                <h3
+                  class="text-3xl font-bold text-[#edca7b] tracking-wide text-center"
+                >
                   Pedicure
                 </h3>
                 <div class="flex items-center w-full my-1">
-                  <div class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                  <div
+                    class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
+                  ></div>
                   <span class="mx-4 flex items-center justify-center">
                     <svg
                       width="28"
@@ -1191,40 +1290,56 @@
                       </defs>
                     </svg>
                   </span>
-                  <div class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                  <div
+                    class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
+                  ></div>
                 </div>
                 <div class="space-y-5 mt-4">
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Regular</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$30</span>
                   </div>
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Basic</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$35</span>
                   </div>
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Amazing</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$45</span>
                   </div>
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Deluxe</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$50</span>
                   </div>
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Luxurious Jelly</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$60</span>
                   </div>
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Super Deluxe</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$75</span>
                   </div>
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Deluxe Volcano</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$90</span>
@@ -1237,11 +1352,15 @@
               class="bg-white/10 rounded-lg shadow-xl overflow-hidden border border-yellow-300 fade-in-up delay-550"
             >
               <div class="p-6 pb-2">
-                <h3 class="text-3xl font-bold text-[#edca7b] tracking-wide text-center">
+                <h3
+                  class="text-3xl font-bold text-[#edca7b] tracking-wide text-center"
+                >
                   Additional Service
                 </h3>
                 <div class="flex items-center w-full my-1">
-                  <div class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                  <div
+                    class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
+                  ></div>
                   <span class="mx-4 flex items-center justify-center">
                     <svg
                       width="28"
@@ -1279,25 +1398,35 @@
                       </defs>
                     </svg>
                   </span>
-                  <div class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                  <div
+                    class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
+                  ></div>
                 </div>
                 <div class="space-y-5 mt-4">
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">French Tip</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$5</span>
                   </div>
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Flower Designs</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$5+</span>
                   </div>
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Nails Take Off</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$10+</span>
                   </div>
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Shellac Take Off</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$5</span>
@@ -1313,11 +1442,15 @@
               class="bg-white/10 rounded-lg shadow-xl overflow-hidden border border-yellow-300 fade-in-up delay-375"
             >
               <div class="p-6 pb-2">
-                <h3 class="text-3xl font-bold text-[#edca7b] tracking-wide text-center">
+                <h3
+                  class="text-3xl font-bold text-[#edca7b] tracking-wide text-center"
+                >
                   Eyelash Extension
                 </h3>
                 <div class="flex items-center w-full my-1">
-                  <div class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                  <div
+                    class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
+                  ></div>
                   <span class="mx-4 flex items-center justify-center">
                     <svg
                       width="28"
@@ -1355,25 +1488,35 @@
                       </defs>
                     </svg>
                   </span>
-                  <div class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                  <div
+                    class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
+                  ></div>
                 </div>
                 <div class="space-y-5 mt-4">
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Volume Eyelash</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$75+</span>
                   </div>
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Individual Eyelash Full Set</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$65+</span>
                   </div>
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Natural Eyelash Full Set</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$60+</span>
                   </div>
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Eyelash Fill</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$45+</span>
@@ -1386,11 +1529,15 @@
               class="bg-white/10 rounded-lg shadow-xl overflow-hidden border border-yellow-300 fade-in-up delay-475"
             >
               <div class="p-6 pb-2">
-                <h3 class="text-3xl font-bold text-[#edca7b] tracking-wide text-center">
+                <h3
+                  class="text-3xl font-bold text-[#edca7b] tracking-wide text-center"
+                >
                   Waxing/Threading
                 </h3>
                 <div class="flex items-center w-full my-1">
-                  <div class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                  <div
+                    class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
+                  ></div>
                   <span class="mx-4 flex items-center justify-center">
                     <svg
                       width="28"
@@ -1428,30 +1575,42 @@
                       </defs>
                     </svg>
                   </span>
-                  <div class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                  <div
+                    class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
+                  ></div>
                 </div>
                 <div class="space-y-5 mt-4">
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Eye Brown</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$10+</span>
                   </div>
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Lips</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$8+</span>
                   </div>
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Legs</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$45+</span>
                   </div>
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Face</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$40+</span>
                   </div>
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Bikini</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$50+</span>
@@ -1464,11 +1623,15 @@
               class="bg-white/10 rounded-lg shadow-xl overflow-hidden border border-yellow-300 fade-in-up delay-575"
             >
               <div class="p-6 pb-2">
-                <h3 class="text-3xl font-bold text-[#edca7b] tracking-wide text-center">
+                <h3
+                  class="text-3xl font-bold text-[#edca7b] tracking-wide text-center"
+                >
                   Gel Shellac
                 </h3>
                 <div class="flex items-center w-full my-1">
-                  <div class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                  <div
+                    class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
+                  ></div>
                   <span class="mx-4 flex items-center justify-center">
                     <svg
                       width="28"
@@ -1506,20 +1669,28 @@
                       </defs>
                     </svg>
                   </span>
-                  <div class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                  <div
+                    class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
+                  ></div>
                 </div>
                 <div class="space-y-5 mt-4">
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">With Pedicure</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$15+</span>
                   </div>
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">Shellac Only</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$25+</span>
                   </div>
-                  <div class="flex justify-between items-center text-base md:text-lg">
+                  <div
+                    class="flex justify-between items-center text-base md:text-lg"
+                  >
                     <span class="text-white">
                       Nails Cleaning, Take Off &amp; Gel Shellac
                     </span>
@@ -1549,9 +1720,9 @@
           // Fade in for headings, grid, and all cards
           document.addEventListener("DOMContentLoaded", function () {
             const fadeEls = document.querySelectorAll("#services .fade-in-up");
-            if (!('IntersectionObserver' in window)) {
+            if (!("IntersectionObserver" in window)) {
               // Fall back if IntersectionObserver not supported
-              fadeEls.forEach(function(el){
+              fadeEls.forEach(function (el) {
                 el.classList.add("fade-in-visible");
               });
               return;
@@ -1674,7 +1845,7 @@
           <h2
             class="text-3xl md:text-4xl lg:text-5xl font-medium font-black tracking-wide text-gradient mb-2"
             style="
-              background: linear-gradient(to bottom, #b88b28, #EDCA7B, #b88b28);
+              background: linear-gradient(to bottom, #b88b28, #edca7b, #b88b28);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
             "
@@ -2156,7 +2327,7 @@
           <h2
             class="text-3xl md:text-4xl lg:text-5xl font-medium font-black tracking-wide text-gradient mb-2 fade-in-up-gallery"
             style="
-              background: linear-gradient(to bottom, #b88b28, #EDCA7B, #b88b28);
+              background: linear-gradient(to bottom, #b88b28, #edca7b, #b88b28);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
             "
@@ -2181,7 +2352,8 @@
             width: 100%;
             height: 100%;
             position: absolute;
-            top: 0; left: 0;
+            top: 0;
+            left: 0;
             transform-style: preserve-3d;
             will-change: transform;
             pointer-events: none;
@@ -2192,24 +2364,23 @@
             position: absolute;
             width: 270px;
             height: 330px;
-            left: 50%; top: 50%;
+            left: 50%;
+            top: 50%;
             transform-style: preserve-3d;
             border-radius: 18px;
             object-fit: cover;
             box-shadow: 0 6px 40px 0 rgba(255, 222, 100, 0.12);
             cursor: pointer;
-            border: 3px solid rgba(255,255,193,0.25);
-            transition: 
-              box-shadow .3s, 
-              border-color .4s,
-              transform .25s cubic-bezier(.39,.27,.21,1.13);
+            border: 3px solid rgba(255, 255, 193, 0.25);
+            transition: box-shadow 0.3s, border-color 0.4s,
+              transform 0.25s cubic-bezier(0.39, 0.27, 0.21, 1.13);
             background: #181813;
             /* Center image origin for nice hover scale effect */
             transform: translate(-50%, -50%);
             pointer-events: auto;
           }
           .carousel-3d-img:hover {
-            box-shadow: 0 8px 60px 0 rgba(255,230,100,0.25);
+            box-shadow: 0 8px 60px 0 rgba(255, 230, 100, 0.25);
             border-color: #ffe55a;
             z-index: 10;
             /* Hiệu ứng nổi khối khi hover */
@@ -2218,11 +2389,12 @@
           /* Thương hiệu ở chính giữa trục - tăng width, rounded-lg */
           .carousel-3d-brand {
             position: absolute;
-            left: 50%; top: 50%;
+            left: 50%;
+            top: 50%;
             transform: translate(-50%, -50%);
             z-index: 30;
             pointer-events: auto;
-            background: rgba(0,0,0,0.65);
+            background: rgba(0, 0, 0, 0.65);
             /* tăng width, rounded-lg */
             width: 410px;
             min-height: 0;
@@ -2235,18 +2407,22 @@
             align-items: center;
           }
           .carousel-3d-brand-text {
-            background: linear-gradient(90deg, #ffe570 20%, #ffd700 60%, #fff7ae 85%, #ac8d00 100%);
+            background: linear-gradient(
+              90deg,
+              #ffe570 20%,
+              #ffd700 60%,
+              #fff7ae 85%,
+              #ac8d00 100%
+            );
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             color: #ffe65a;
             font-size: 2.1rem;
             letter-spacing: 0.08em;
-            font-family: 'Dancing Script',cursive;
+            font-family: "Dancing Script", cursive;
             font-weight: 800;
-            text-shadow:
-              0 2px 8px #3024007c,
-              0 0px 0px #fffad4;
+            text-shadow: 0 2px 8px #3024007c, 0 0px 0px #fffad4;
             margin-bottom: 0.2em;
             text-align: center;
             white-space: normal;
@@ -2255,20 +2431,24 @@
           .carousel-3d-brand-sub {
             color: #fff6c1;
             font-size: 1.05rem;
-            font-family: 'Montserrat',sans-serif;
+            font-family: "Montserrat", sans-serif;
             font-weight: 500;
             letter-spacing: 0.13em;
-            text-shadow:
-              0 2px 4px #29240681,
-              0 0px 0px #fffad482;
+            text-shadow: 0 2px 4px #29240681, 0 0px 0px #fffad482;
             margin-top: -0.15em;
             text-align: center;
             white-space: normal;
             word-break: break-word;
           }
           @media (max-width: 900px) {
-            .carousel-3d-container { max-width: 420px; height: 320px; }
-            .carousel-3d-img { width: 165px; height: 222px; }
+            .carousel-3d-container {
+              max-width: 420px;
+              height: 320px;
+            }
+            .carousel-3d-img {
+              width: 165px;
+              height: 222px;
+            }
             .carousel-3d-brand {
               width: 200px;
               padding: 8px 0;
@@ -2289,25 +2469,96 @@
               <span class="carousel-3d-brand-text">LISA Nails and Spa</span>
               <span class="carousel-3d-brand-sub">True beauty, cherish yourself</span>
             </div> -->
-            <img src="./img/gallery_22.jpg" alt="Carousel Img 1" class="carousel-3d-img" />
-            <img src="./img/gallery_23.jpg" alt="Carousel Img 2" class="carousel-3d-img" />
-            <img src="./img/gallery_24.jpg" alt="Carousel Img 3" class="carousel-3d-img" />
-            <img src="./img/gallery_25.jpg" alt="Carousel Img 4" class="carousel-3d-img" />
-            <img src="./img/gallery_21.jpg" alt="Carousel Img 5" class="carousel-3d-img" />
-            <img src="./img/gallery_18.jpg" alt="Carousel Img 6" class="carousel-3d-img" />
-            <img src="./img/gallery_19.jpg" alt="Carousel Img 7" class="carousel-3d-img" />
-            <img src="./img/gallery_14.jpg" alt="Carousel Img 8" class="carousel-3d-img" />
-            <img src="./img/gallery_16.jpg" alt="Carousel Img 9" class="carousel-3d-img" />
-            <img src="./img/gallery_26.jpg" alt="Carousel Img 10" class="carousel-3d-img" />
-            <img src="./img/gallery_20.jpg" alt="Carousel Img 10" class="carousel-3d-img" />
-            <img src="./img/gallery_13.jpg" alt="Carousel Img 10" class="carousel-3d-img" />
-            <img src="./img/gallery_09.jpg" alt="Carousel Img 10" class="carousel-3d-img" />
-            <img src="./img/gallery_02.jpg" alt="Carousel Img 10" class="carousel-3d-img" />
-            <img src="./img/gallery_10.jpg" alt="Carousel Img 10" class="carousel-3d-img" />
-            <img src="./img/gallery_04.jpg" alt="Carousel Img 10" class="carousel-3d-img" />
-            <img src="./img/gallery_03.jpg" alt="Carousel Img 10" class="carousel-3d-img" />
-            <img src="./img/gallery_08.jpg" alt="Carousel Img 10" class="carousel-3d-img" />
-
+            <img
+              src="./img/gallery_22.jpg"
+              alt="Carousel Img 1"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_23.jpg"
+              alt="Carousel Img 2"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_24.jpg"
+              alt="Carousel Img 3"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_25.jpg"
+              alt="Carousel Img 4"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_21.jpg"
+              alt="Carousel Img 5"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_18.jpg"
+              alt="Carousel Img 6"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_19.jpg"
+              alt="Carousel Img 7"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_14.jpg"
+              alt="Carousel Img 8"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_16.jpg"
+              alt="Carousel Img 9"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_26.jpg"
+              alt="Carousel Img 10"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_20.jpg"
+              alt="Carousel Img 10"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_13.jpg"
+              alt="Carousel Img 10"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_09.jpg"
+              alt="Carousel Img 10"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_02.jpg"
+              alt="Carousel Img 10"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_10.jpg"
+              alt="Carousel Img 10"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_04.jpg"
+              alt="Carousel Img 10"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_03.jpg"
+              alt="Carousel Img 10"
+              class="carousel-3d-img"
+            />
+            <img
+              src="./img/gallery_08.jpg"
+              alt="Carousel Img 10"
+              class="carousel-3d-img"
+            />
           </div>
         </div>
         <script>
@@ -2325,9 +2576,8 @@
 
             images.forEach((img, i) => {
               const rot = theta * i;
-              img.style.transform =
-                `translate(-50%, -50%) rotateY(${rot}deg) translateZ(${radius}px) rotateX(${tilt}deg)`;
-              img.setAttribute('tabindex', 0);
+              img.style.transform = `translate(-50%, -50%) rotateY(${rot}deg) translateZ(${radius}px) rotateX(${tilt}deg)`;
+              img.setAttribute("tabindex", 0);
             });
 
             function animate(ts) {
@@ -2338,9 +2588,10 @@
               const rotate = t * 360;
               carousel.style.transform = `translateZ(-${radius}px) rotateY(${-rotate}deg)`;
               // Giữ brand không bị xoay cùng carousel
-              const brand = carousel.querySelector('.carousel-3d-brand');
+              const brand = carousel.querySelector(".carousel-3d-brand");
               if (brand) {
-                brand.style.transform = 'translate(-50%, -50%) rotateY(' + (rotate) + 'deg)';
+                brand.style.transform =
+                  "translate(-50%, -50%) rotateY(" + rotate + "deg)";
               }
               requestAnimationFrame(animate);
             }
@@ -2883,7 +3134,7 @@
           <h2
             class="text-3xl md:text-4xl lg:text-5xl font-medium font-black tracking-wide text-gradient mb-2 fade-in-up-gallery"
             style="
-              background: linear-gradient(to bottom, #b88b28, #EDCA7B, #b88b28);
+              background: linear-gradient(to bottom, #b88b28, #edca7b, #b88b28);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
             "
@@ -2891,93 +3142,155 @@
             FREQUENTLY ASKED QUESTIONS
           </h2>
         </div>
-        <div class="faq-shadow-container rounded-xl border border-yellow-300/70">
+        <div
+          class="faq-shadow-container rounded-xl border border-yellow-300/70"
+        >
           <!-- FAQ item -->
           <details class="faq-detail border-b last:border-b-0">
-            <summary class="flex items-center px-6 py-4 cursor-pointer text-base sm:text-lg font-semibold text-[#EDCA7B select-none transition group">
+            <summary
+              class="flex items-center px-6 py-4 cursor-pointer text-base sm:text-lg font-semibold text-[#EDCA7B select-none transition group"
+            >
               <span class="flex-1">Where is Lisa Nails and Spa located?</span>
-              <span class="ml-4 text-yellow-300 text-2xl font-bold leading-none transition-transform duration-200 group-open:rotate-45 select-none">+</span>
+              <span
+                class="ml-4 text-yellow-300 text-2xl font-bold leading-none transition-transform duration-200 group-open:rotate-45 select-none"
+                >+</span
+              >
             </summary>
             <div class="faq-content px-6 pb-4 pt-1 text-yellow-50/90 text-base">
-              We are located at 280 W Kettleman Ln, Lodi, CA 95240, easily accessible with convenient parking.
+              We are located at 280 W Kettleman Ln, Lodi, CA 95240, easily
+              accessible with convenient parking.
             </div>
           </details>
           <details class="faq-detail border-b last:border-b-0">
-            <summary class="flex items-center px-6 py-4 cursor-pointer text-base sm:text-lg font-semibold text-[#EDCA7B select-none transition group">
+            <summary
+              class="flex items-center px-6 py-4 cursor-pointer text-base sm:text-lg font-semibold text-[#EDCA7B select-none transition group"
+            >
               <span class="flex-1">What are your operating hours?</span>
-              <span class="ml-4 text-yellow-300 text-2xl font-bold leading-none transition-transform duration-200 group-open:rotate-45 select-none">+</span>
+              <span
+                class="ml-4 text-yellow-300 text-2xl font-bold leading-none transition-transform duration-200 group-open:rotate-45 select-none"
+                >+</span
+              >
             </summary>
             <div class="faq-content px-6 pb-4 pt-1 text-yellow-50/90 text-base">
-              We’re open Monday to Saturday from 9:00 AM to 7:30 PM, and Sunday from 10:00 AM to 6:30 PM.
+              We’re open Monday to Saturday from 9:00 AM to 7:30 PM, and Sunday
+              from 10:00 AM to 6:30 PM.
             </div>
           </details>
           <details class="faq-detail border-b last:border-b-0">
-            <summary class="flex items-center px-6 py-4 cursor-pointer text-base sm:text-lg font-semibold text-[#EDCA7B select-none transition group">
-              <span class="flex-1">Do I need to book an appointment in advance?</span>
-              <span class="ml-4 text-yellow-300 text-2xl font-bold leading-none transition-transform duration-200 group-open:rotate-45 select-none">+</span>
+            <summary
+              class="flex items-center px-6 py-4 cursor-pointer text-base sm:text-lg font-semibold text-[#EDCA7B select-none transition group"
+            >
+              <span class="flex-1"
+                >Do I need to book an appointment in advance?</span
+              >
+              <span
+                class="ml-4 text-yellow-300 text-2xl font-bold leading-none transition-transform duration-200 group-open:rotate-45 select-none"
+                >+</span
+              >
             </summary>
             <div class="faq-content px-6 pb-4 pt-1 text-yellow-50/90 text-base">
-              Yes, we recommend booking in advance to ensure availability, especially during weekends.
+              Yes, we recommend booking in advance to ensure availability,
+              especially during weekends.
             </div>
           </details>
           <details class="faq-detail border-b last:border-b-0">
-            <summary class="flex items-center px-6 py-4 cursor-pointer text-base sm:text-lg font-semibold text-[#EDCA7B select-none transition group">
+            <summary
+              class="flex items-center px-6 py-4 cursor-pointer text-base sm:text-lg font-semibold text-[#EDCA7B select-none transition group"
+            >
               <span class="flex-1">Do you accept walk-ins?</span>
-              <span class="ml-4 text-yellow-300 text-2xl font-bold leading-none transition-transform duration-200 group-open:rotate-45 select-none">+</span>
+              <span
+                class="ml-4 text-yellow-300 text-2xl font-bold leading-none transition-transform duration-200 group-open:rotate-45 select-none"
+                >+</span
+              >
             </summary>
             <div class="faq-content px-6 pb-4 pt-1 text-yellow-50/90 text-base">
-              Walk-ins are welcome based on availability, but appointments are preferred.
+              Walk-ins are welcome based on availability, but appointments are
+              preferred.
             </div>
           </details>
           <details class="faq-detail border-b last:border-b-0">
-            <summary class="flex items-center px-6 py-4 cursor-pointer text-base sm:text-lg font-semibold text-[#EDCA7B select-none transition group">
+            <summary
+              class="flex items-center px-6 py-4 cursor-pointer text-base sm:text-lg font-semibold text-[#EDCA7B select-none transition group"
+            >
               <span class="flex-1">What services do you offer?</span>
-              <span class="ml-4 text-yellow-300 text-2xl font-bold leading-none transition-transform duration-200 group-open:rotate-45 select-none">+</span>
+              <span
+                class="ml-4 text-yellow-300 text-2xl font-bold leading-none transition-transform duration-200 group-open:rotate-45 select-none"
+                >+</span
+              >
             </summary>
             <div class="faq-content px-6 pb-4 pt-1 text-yellow-50/90 text-base">
-              We offer manicures, pedicures, gel polish, spa treatments, and deluxe packages.
+              We offer manicures, pedicures, gel polish, spa treatments, and
+              deluxe packages.
             </div>
           </details>
           <details class="faq-detail border-b last:border-b-0">
-            <summary class="flex items-center px-6 py-4 cursor-pointer text-base sm:text-lg font-semibold text-[#EDCA7B select-none transition group">
+            <summary
+              class="flex items-center px-6 py-4 cursor-pointer text-base sm:text-lg font-semibold text-[#EDCA7B select-none transition group"
+            >
               <span class="flex-1">Do you offer nail services for men?</span>
-              <span class="ml-4 text-yellow-300 text-2xl font-bold leading-none transition-transform duration-200 group-open:rotate-45 select-none">+</span>
+              <span
+                class="ml-4 text-yellow-300 text-2xl font-bold leading-none transition-transform duration-200 group-open:rotate-45 select-none"
+                >+</span
+              >
             </summary>
             <div class="faq-content px-6 pb-4 pt-1 text-yellow-50/90 text-base">
-              Absolutely. Our services are designed for everyone — men are welcome and well cared for.
+              Absolutely. Our services are designed for everyone — men are
+              welcome and well cared for.
             </div>
           </details>
           <details class="faq-detail border-b last:border-b-0">
-            <summary class="flex items-center px-6 py-4 cursor-pointer text-base sm:text-lg font-semibold text-[#EDCA7B select-none transition group">
+            <summary
+              class="flex items-center px-6 py-4 cursor-pointer text-base sm:text-lg font-semibold text-[#EDCA7B select-none transition group"
+            >
               <span class="flex-1">Can I request a specific technician?</span>
-              <span class="ml-4 text-yellow-300 text-2xl font-bold leading-none transition-transform duration-200 group-open:rotate-45 select-none">+</span>
+              <span
+                class="ml-4 text-yellow-300 text-2xl font-bold leading-none transition-transform duration-200 group-open:rotate-45 select-none"
+                >+</span
+              >
             </summary>
             <div class="faq-content px-6 pb-4 pt-1 text-yellow-50/90 text-base">
               Yes, you may request your preferred technician when booking.
             </div>
           </details>
           <details class="faq-detail border-b last:border-b-0">
-            <summary class="flex items-center px-6 py-4 cursor-pointer text-base sm:text-lg font-semibold text-[#EDCA7B select-none transition group">
+            <summary
+              class="flex items-center px-6 py-4 cursor-pointer text-base sm:text-lg font-semibold text-[#EDCA7B select-none transition group"
+            >
               <span class="flex-1">Do you offer gift cards?</span>
-              <span class="ml-4 text-yellow-300 text-2xl font-bold leading-none transition-transform duration-200 group-open:rotate-45 select-none">+</span>
+              <span
+                class="ml-4 text-yellow-300 text-2xl font-bold leading-none transition-transform duration-200 group-open:rotate-45 select-none"
+                >+</span
+              >
             </summary>
             <div class="faq-content px-6 pb-4 pt-1 text-yellow-50/90 text-base">
-              Yes, we offer elegant gift cards — perfect for birthdays, holidays, or special occasions.
+              Yes, we offer elegant gift cards — perfect for birthdays,
+              holidays, or special occasions.
             </div>
           </details>
           <details class="faq-detail border-b last:border-b-0">
-            <summary class="flex items-center px-6 py-4 cursor-pointer text-base sm:text-lg font-semibold text-[#EDCA7B select-none transition group">
+            <summary
+              class="flex items-center px-6 py-4 cursor-pointer text-base sm:text-lg font-semibold text-[#EDCA7B select-none transition group"
+            >
               <span class="flex-1">Is there a cancellation policy?</span>
-              <span class="ml-4 text-yellow-300 text-2xl font-bold leading-none transition-transform duration-200 group-open:rotate-45 select-none">+</span>
+              <span
+                class="ml-4 text-yellow-300 text-2xl font-bold leading-none transition-transform duration-200 group-open:rotate-45 select-none"
+                >+</span
+              >
             </summary>
             <div class="faq-content px-6 pb-4 pt-1 text-yellow-50/90 text-base">
-              Yes. We kindly ask for at least 24 hours’ notice for cancellations or rescheduling.
+              Yes. We kindly ask for at least 24 hours’ notice for cancellations
+              or rescheduling.
             </div>
           </details>
           <details class="faq-detail">
-            <summary class="flex items-center px-6 py-4 cursor-pointer text-base sm:text-lg font-semibold text-[#EDCA7B select-none transition group">
+            <summary
+              class="flex items-center px-6 py-4 cursor-pointer text-base sm:text-lg font-semibold text-[#EDCA7B select-none transition group"
+            >
               <span class="flex-1">How can I contact Lisa Nails and Spa?</span>
-              <span class="ml-4 text-yellow-300 text-2xl font-bold leading-none transition-transform duration-200 group-open:rotate-45 select-none">+</span>
+              <span
+                class="ml-4 text-yellow-300 text-2xl font-bold leading-none transition-transform duration-200 group-open:rotate-45 select-none"
+                >+</span
+              >
             </summary>
             <div class="faq-content px-6 pb-4 pt-1 text-yellow-50/90 text-base">
               You can call us at 209-333-7888
@@ -2988,7 +3301,7 @@
       <style>
         .faq-shadow-container {
           /* Optionally add a soft shadow for separation, but no background color */
-          box-shadow: 0 4px 24px -3px rgba(255, 215, 0, 0.10);
+          box-shadow: 0 4px 24px -3px rgba(255, 215, 0, 0.1);
           background: transparent;
         }
         .faq-detail {
@@ -3029,12 +3342,11 @@
           opacity: 0;
           overflow: hidden;
           pointer-events: none;
-          transform: translateY(11px) scaleY(.975);
-          transition:
-            max-height 0.44s cubic-bezier(.43,.33,.12,1.2),
-            opacity 0.23s cubic-bezier(.43,.33,.12,1.2),
-            padding-top 0.13s cubic-bezier(.68,.25,.24,1.12),
-            transform 0.19s cubic-bezier(.51,.12,.33,1.28);
+          transform: translateY(11px) scaleY(0.975);
+          transition: max-height 0.44s cubic-bezier(0.43, 0.33, 0.12, 1.2),
+            opacity 0.23s cubic-bezier(0.43, 0.33, 0.12, 1.2),
+            padding-top 0.13s cubic-bezier(0.68, 0.25, 0.24, 1.12),
+            transform 0.19s cubic-bezier(0.51, 0.12, 0.33, 1.28);
           will-change: max-height, opacity, padding-top, transform;
         }
         .faq-detail[open] .faq-content {
@@ -3055,7 +3367,7 @@
         document.addEventListener("DOMContentLoaded", function () {
           const faqs = Array.from(document.querySelectorAll(".faq-detail"));
 
-          faqs.forEach(faq => {
+          faqs.forEach((faq) => {
             const summary = faq.querySelector("summary");
             summary.setAttribute("tabindex", "0");
 
@@ -3071,7 +3383,7 @@
             summary.addEventListener("click", function () {
               if (!faq.open) {
                 // Đóng tất cả, trừ cái vừa click
-                faqs.forEach(fq => {
+                faqs.forEach((fq) => {
                   if (fq !== faq && fq.open) fq.removeAttribute("open");
                 });
               }
@@ -3131,7 +3443,12 @@
             <h2
               class="text-3xl font-black tracking-wide text-gradient mb-2"
               style="
-                background: linear-gradient(to bottom, #b88b28, #EDCA7B, #b88b28);
+                background: linear-gradient(
+                  to bottom,
+                  #b88b28,
+                  #edca7b,
+                  #b88b28
+                );
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
               "
