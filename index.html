@@ -80,17 +80,6 @@
             </li>
             <li>
               <a
-                href="#gallery"
-                class="px-4 py-2 rounded-full font-semibold text-lg md:text-xl text-[#edca7b] transition-colors relative group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary/60 hover:text-secondary"
-              >
-                Gallery
-                <span
-                  class="pointer-events-none absolute left-4 right-4 -bottom-0.5 h-px bg-gradient-to-r from-transparent via-[#EAC463] to-transparent scale-x-0 origin-center transition-transform duration-300 group-hover:scale-x-100"
-                ></span>
-              </a>
-            </li>
-            <li>
-              <a
                 href="#testimonials"
                 class="px-4 py-2 rounded-full font-semibold text-lg md:text-xl text-[#edca7b] transition-colors relative group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary/60 hover:text-secondary"
               >
@@ -102,10 +91,21 @@
             </li>
             <li>
               <a
-                href="#contact"
+                href="#gallery"
                 class="px-4 py-2 rounded-full font-semibold text-lg md:text-xl text-[#edca7b] transition-colors relative group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary/60 hover:text-secondary"
               >
-                Contact
+                Gallery
+                <span
+                  class="pointer-events-none absolute left-4 right-4 -bottom-0.5 h-px bg-gradient-to-r from-transparent via-[#EAC463] to-transparent scale-x-0 origin-center transition-transform duration-300 group-hover:scale-x-100"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#faq"
+                class="px-4 py-2 rounded-full font-semibold text-lg md:text-xl text-[#edca7b] transition-colors relative group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary/60 hover:text-secondary"
+              >
+                FAQs
                 <span
                   class="pointer-events-none absolute left-4 right-4 -bottom-0.5 h-px bg-gradient-to-r from-transparent via-[#EAC463] to-transparent scale-x-0 origin-center transition-transform duration-300 group-hover:scale-x-100"
                 ></span>
@@ -242,6 +242,27 @@
               </li>
               <li>
                 <a
+                  href="#testimonials"
+                  class="mobile-nav-link group flex items-center px-4 py-3 rounded-lg text-[#edca7b] hover:bg-secondary/10 hover:text-secondary transition-all duration-300"
+                >
+                  <svg
+                    class="w-5 h-5 mr-3 group-hover:scale-110 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    />
+                  </svg>
+                  <span class="font-medium">Testimonials</span>
+                </a>
+              </li>
+              <li>
+                <a
                   href="#gallery"
                   class="mobile-nav-link group flex items-center px-4 py-3 rounded-lg text-[#edca7b] hover:bg-secondary/10 hover:text-secondary transition-all duration-300"
                 >
@@ -263,7 +284,7 @@
               </li>
               <li>
                 <a
-                  href="#testimonials"
+                  href="#faq"
                   class="mobile-nav-link group flex items-center px-4 py-3 rounded-lg text-[#edca7b] hover:bg-secondary/10 hover:text-secondary transition-all duration-300"
                 >
                   <svg
@@ -279,9 +300,9 @@
                       d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
                     />
                   </svg>
-                  <span class="font-medium">Testimonials</span>
+                  <span class="font-medium">FAQs</span>
                 </a>
-              </li>
+              </li>              
               <li>
                 <a
                   href="#contact"
@@ -572,51 +593,99 @@
               </style>
             </div>
             <!-- Right column: Images -->
-            <div
-              class="relative flex items-center justify-center h-full min-h-[440px] hero-fadeup"
-              data-fade-delay="200"
-            >
-              <div class="grid grid-cols-2 gap-3 h-full w-full">
-                <div
-                  class="col-span-2 relative h-[36vw] max-h-[380px] min-h-[200px] lg:max-h-[430px] rounded-lg overflow-hidden group shadow-xl bg-white hero-fadeup"
-                  data-fade-delay="300"
-                >
-                  <img
-                    src="./img/luxury-nail-salon-manicure-elegant-hands-with-perf.jpg"
-                    alt="Luxury nail service"
-                    class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700"
-                    loading="eager"
-                  />
-                  <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"
-                  ></div>
-                </div>
-
-                <div
-                  class="relative rounded-lg overflow-hidden group shadow bg-white/60 h-[18vw] min-h-[110px] max-h-[190px] hero-fadeup"
-                  data-fade-delay="400"
-                >
-                  <img
-                    src="./img/spa-relaxation-massage-stones-candles-luxury.jpg"
-                    alt="Spa relaxation"
-                    class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700"
-                    loading="lazy"
-                  />
-                </div>
-
-                <div
-                  class="relative rounded-lg overflow-hidden group shadow bg-white/60 h-[18vw] min-h-[110px] max-h-[190px] hero-fadeup"
-                  data-fade-delay="500"
-                >
-                  <img
-                    src="./img/nail-polish-colors-luxury-beauty-products.jpg"
-                    alt="Nail polish collection"
-                    class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700"
-                    loading="lazy"
-                  />
-                </div>
+            <!-- 3D Carousel (smaller, independent class names, responsive, fewer images) -->
+            <style>
+              .hero-carousel-3d-container {
+                perspective: 1200px;
+                width: 100%;
+                max-width: 430px;
+                margin: 0 auto 1.5rem auto;
+                height: 270px;
+                position: relative;
+                overflow: visible;
+                pointer-events: none;
+              }
+              .hero-carousel-3d {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0; left: 0;
+                transform-style: preserve-3d;
+                will-change: transform;
+                pointer-events: none;
+              }
+              .hero-carousel-3d-img {
+                position: absolute;
+                width: 242px;
+                height: 308px;
+                left: 50%; top: 50%;
+                transform-style: preserve-3d;
+                border-radius: 14px;
+                object-fit: cover;
+                box-shadow: 0 3px 22px 0 rgba(255, 222, 100, 0.14);
+                cursor: pointer;
+                border: 2.5px solid rgba(255,255,193,0.22);
+                transition: 
+                  box-shadow .25s, 
+                  border-color .3s,
+                  transform .21s cubic-bezier(.39,.27,.21,1.13);
+                background: #181813;
+                /* Center image origin for nice hover scale effect */
+                transform: translate(-50%, -50%);
+                pointer-events: auto;
+              }
+              .hero-carousel-3d-img:hover {
+                box-shadow: 0 5px 34px 0 rgba(255,230,100,0.22);
+                border-color: #ffe65a;
+                z-index: 10;
+                transform: translate(-50%, -50%) scale(1.095);
+              }
+              /* Brand for hero (hidden by default) */
+              .hero-carousel-3d-brand {
+                display: none;
+              }
+              @media (max-width: 480px) {
+                .hero-carousel-3d-container { max-width: 99vw; height: 162px; }
+                .hero-carousel-3d-img { width: 66px; height: 86px; border-radius: 8px; }
+              }
+            </style>
+            <div class="hero-carousel-3d-container">
+              <div class="hero-carousel-3d" id="hero-carousel3d">
+                <img src="./img/g_t_01.jpg" alt="Carousel Img 1" class="hero-carousel-3d-img" />
+                <img src="./img/gallery_01.jpg" alt="Carousel Img 2" class="hero-carousel-3d-img" />
+                <img src="./img/luxury-nail-salon-manicure-elegant-hands-with-perf.jpg" alt="Carousel Img 3" class="hero-carousel-3d-img" />
+                <img src="./img/g_t_02.jpg" alt="Carousel Img 5" class="hero-carousel-3d-img" />
+                <img src="./img/nail6.webp" alt="Carousel Img 4" class="hero-carousel-3d-img" />
               </div>
             </div>
+            <script>
+              (function () {
+                const carousel = document.getElementById("hero-carousel3d");
+                const images = carousel.querySelectorAll(".hero-carousel-3d-img");
+                const imgCount = images.length;
+                const theta = 360 / imgCount;
+                const radius = 240;
+                const tilt = 0;
+                let startTime = null;
+
+                images.forEach((img, i) => {
+                  const rot = theta * i;
+                  img.style.transform =
+                    `translate(-50%, -50%) rotateY(${rot}deg) translateZ(${radius}px) rotateX(${tilt}deg)`;
+                  img.setAttribute('tabindex', 0);
+                });
+
+                function animate(ts) {
+                  if (!startTime) startTime = ts;
+                  const duration = 22000;
+                  const t = ((ts - startTime) % duration) / duration;
+                  const rotate = t * 360;
+                  carousel.style.transform = `translateZ(-${radius}px) rotateY(${-rotate}deg)`;
+                  requestAnimationFrame(animate);
+                }
+                requestAnimationFrame(animate);
+              })();
+            </script>
             <!-- End Right column -->
           </div>
         </div>
@@ -809,74 +878,62 @@
               class="bg-white/10 rounded-lg shadow-xl overflow-hidden border border-yellow-300 fade-in-up delay-300"
             >
               <div class="p-6 pb-2">
-                <h3
-                  class="text-3xl font-bold text-[#edca7b] tracking-wide text-center"
-                >
-                  Acrylic Powder
-                  <div class="flex items-center w-full my-1">
-                    <div
-                      class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
-                    ></div>
-                    <span class="mx-4 flex items-center justify-center">
-                      <svg
-                        width="28"
-                        height="20"
-                        viewBox="0 0 28 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g filter="url(#star-glow-eyes)">
-                          <path
-                            d="M14 3L15.2361 8.76393L21 10L15.2361 11.2361L14 17L12.7639 11.2361L7 10L12.7639 8.76393L14 3Z"
-                            fill="#EAC463"
-                            stroke="#EAC463"
-                            stroke-width="1.2"
-                          ></path>
-                        </g>
-                        <defs>
-                          <filter
-                            id="star-glow-eyes"
-                            x="0"
-                            y="0"
-                            width="28"
-                            height="20"
-                            filterUnits="userSpaceOnUse"
-                            color-interpolation-filters="sRGB"
-                          >
-                            <feDropShadow
-                              dx="0"
-                              dy="0"
-                              stdDeviation="2"
-                              flood-color="#EAC463"
-                              flood-opacity="0.7"
-                            ></feDropShadow>
-                          </filter>
-                        </defs>
-                      </svg>
-                    </span>
-                    <div
-                      class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
-                    ></div>
-                  </div>
+                <h3 class="text-3xl font-bold text-[#edca7b] tracking-wide text-center">
+                  Acrylic Full Set
                 </h3>
+                <div class="flex items-center w-full my-1">
+                  <div class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                  <span class="mx-4 flex items-center justify-center">
+                    <svg
+                      width="28"
+                      height="20"
+                      viewBox="0 0 28 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g filter="url(#star-glow-eyes)">
+                        <path
+                          d="M14 3L15.2361 8.76393L21 10L15.2361 11.2361L14 17L12.7639 11.2361L7 10L12.7639 8.76393L14 3Z"
+                          fill="#EAC463"
+                          stroke="#EAC463"
+                          stroke-width="1.2"
+                        ></path>
+                      </g>
+                      <defs>
+                        <filter
+                          id="star-glow-eyes"
+                          x="0"
+                          y="0"
+                          width="28"
+                          height="20"
+                          filterUnits="userSpaceOnUse"
+                          color-interpolation-filters="sRGB"
+                        >
+                          <feDropShadow
+                            dx="0"
+                            dy="0"
+                            stdDeviation="2"
+                            flood-color="#EAC463"
+                            flood-opacity="0.7"
+                          ></feDropShadow>
+                        </filter>
+                      </defs>
+                    </svg>
+                  </span>
+                  <div class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                </div>
                 <div class="space-y-4 mt-4">
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Fiber Glass</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
-                    <span class="text-[#edca7b] font-bold">$35+</span>
+                    <span class="text-[#edca7b] font-bold">$40+</span>
                   </div>
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Pink & White</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$55</span>
                   </div>
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Full Set with Shellac</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$45</span>
@@ -889,84 +946,65 @@
               class="bg-white/10 rounded-lg shadow-xl overflow-hidden border border-yellow-300 fade-in-up delay-400"
             >
               <div class="p-6 pb-2">
-                <h3
-                  class="text-3xl font-bold text-[#edca7b] tracking-wide text-center"
-                >
+                <h3 class="text-3xl font-bold text-[#edca7b] tracking-wide text-center">
                   Acrylic Fill
-                  <div class="flex items-center w-full my-1">
-                    <div
-                      class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
-                    ></div>
-                    <span class="mx-4 flex items-center justify-center">
-                      <svg
-                        width="28"
-                        height="20"
-                        viewBox="0 0 28 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g filter="url(#star-glow-eyes)">
-                          <path
-                            d="M14 3L15.2361 8.76393L21 10L15.2361 11.2361L14 17L12.7639 11.2361L7 10L12.7639 8.76393L14 3Z"
-                            fill="#EAC463"
-                            stroke="#EAC463"
-                            stroke-width="1.2"
-                          ></path>
-                        </g>
-                        <defs>
-                          <filter
-                            id="star-glow-eyes"
-                            x="0"
-                            y="0"
-                            width="28"
-                            height="20"
-                            filterUnits="userSpaceOnUse"
-                            color-interpolation-filters="sRGB"
-                          >
-                            <feDropShadow
-                              dx="0"
-                              dy="0"
-                              stdDeviation="2"
-                              flood-color="#EAC463"
-                              flood-opacity="0.7"
-                            ></feDropShadow>
-                          </filter>
-                        </defs>
-                      </svg>
-                    </span>
-                    <div
-                      class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
-                    ></div>
-                  </div>
                 </h3>
+                <div class="flex items-center w-full my-1">
+                  <div class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                  <span class="mx-4 flex items-center justify-center">
+                    <svg
+                      width="28"
+                      height="20"
+                      viewBox="0 0 28 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g filter="url(#star-glow-eyes)">
+                        <path
+                          d="M14 3L15.2361 8.76393L21 10L15.2361 11.2361L14 17L12.7639 11.2361L7 10L12.7639 8.76393L14 3Z"
+                          fill="#EAC463"
+                          stroke="#EAC463"
+                          stroke-width="1.2"
+                        ></path>
+                      </g>
+                      <defs>
+                        <filter
+                          id="star-glow-eyes"
+                          x="0"
+                          y="0"
+                          width="28"
+                          height="20"
+                          filterUnits="userSpaceOnUse"
+                          color-interpolation-filters="sRGB"
+                        >
+                          <feDropShadow
+                            dx="0"
+                            dy="0"
+                            stdDeviation="2"
+                            flood-color="#EAC463"
+                            flood-opacity="0.7"
+                          ></feDropShadow>
+                        </filter>
+                      </defs>
+                    </svg>
+                  </span>
+                  <div class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                </div>
                 <div class="space-y-4 mt-4">
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Regular Fill</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$30+</span>
                   </div>
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Fill and Clean Cuticle</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$40+</span>
                   </div>
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Fill with Shellac</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$35</span>
-                  </div>
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
-                    <span class="text-white">Fill with Acrylic Color</span>
-                    <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
-                    <span class="text-[#edca7b] font-bold">$38+</span>
                   </div>
                 </div>
               </div>
@@ -976,158 +1014,129 @@
               class="bg-white/10 rounded-lg shadow-xl overflow-hidden border border-yellow-300 fade-in-up delay-500"
             >
               <div class="p-6 pb-2">
-                <h3
-                  class="text-3xl font-bold text-[#edca7b] tracking-wide text-center"
-                >
+                <h3 class="text-3xl font-bold text-[#edca7b] tracking-wide text-center">
                   Dips
-                  <div class="flex items-center w-full my-1">
-                    <div
-                      class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
-                    ></div>
-                    <span class="mx-4 flex items-center justify-center">
-                      <svg
-                        width="28"
-                        height="20"
-                        viewBox="0 0 28 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g filter="url(#star-glow-eyes)">
-                          <path
-                            d="M14 3L15.2361 8.76393L21 10L15.2361 11.2361L14 17L12.7639 11.2361L7 10L12.7639 8.76393L14 3Z"
-                            fill="#EAC463"
-                            stroke="#EAC463"
-                            stroke-width="1.2"
-                          ></path>
-                        </g>
-                        <defs>
-                          <filter
-                            id="star-glow-eyes"
-                            x="0"
-                            y="0"
-                            width="28"
-                            height="20"
-                            filterUnits="userSpaceOnUse"
-                            color-interpolation-filters="sRGB"
-                          >
-                            <feDropShadow
-                              dx="0"
-                              dy="0"
-                              stdDeviation="2"
-                              flood-color="#EAC463"
-                              flood-opacity="0.7"
-                            ></feDropShadow>
-                          </filter>
-                        </defs>
-                      </svg>
-                    </span>
-                    <div
-                      class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
-                    ></div>
-                  </div>
                 </h3>
+                <div class="flex items-center w-full my-1">
+                  <div class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                  <span class="mx-4 flex items-center justify-center">
+                    <svg
+                      width="28"
+                      height="20"
+                      viewBox="0 0 28 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g filter="url(#star-glow-eyes)">
+                        <path
+                          d="M14 3L15.2361 8.76393L21 10L15.2361 11.2361L14 17L12.7639 11.2361L7 10L12.7639 8.76393L14 3Z"
+                          fill="#EAC463"
+                          stroke="#EAC463"
+                          stroke-width="1.2"
+                        ></path>
+                      </g>
+                      <defs>
+                        <filter
+                          id="star-glow-eyes"
+                          x="0"
+                          y="0"
+                          width="28"
+                          height="20"
+                          filterUnits="userSpaceOnUse"
+                          color-interpolation-filters="sRGB"
+                        >
+                          <feDropShadow
+                            dx="0"
+                            dy="0"
+                            stdDeviation="2"
+                            flood-color="#EAC463"
+                            flood-opacity="0.7"
+                          ></feDropShadow>
+                        </filter>
+                      </defs>
+                    </svg>
+                  </span>
+                  <div class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                </div>
                 <div class="space-y-4 mt-4">
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Dip Full Set</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
-                    <span class="text-[#edca7b] font-bold">$55+</span>
+                    <span class="text-[#edca7b] font-bold">$50+</span>
                   </div>
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Dip Pink and White</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
-                    <span class="text-[#edca7b] font-bold">$50</span>
-                  </div>
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
-                    <span class="text-white">Dip Fill</span>
-                    <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
-                    <span class="text-[#edca7b] font-bold">35+</span>
+                    <span class="text-[#edca7b] font-bold">$60</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Middle column: Acrylic Powder (Chi tiết theo bố cục giống trái) -->
+          <!-- Middle column: Manicure / Pedicure / Additional Service -->
           <div class="space-y-6">
             <!-- Card: Manicure -->
             <div
               class="bg-white/10 rounded-lg shadow-xl overflow-hidden border border-yellow-300 fade-in-up delay-350"
             >
               <div class="p-6 pb-2">
-                <h3
-                  class="text-3xl font-bold text-[#edca7b] tracking-wide text-center"
-                >
+                <h3 class="text-3xl font-bold text-[#edca7b] tracking-wide text-center">
                   Manicure
-                  <div class="flex items-center w-full my-1">
-                    <div
-                      class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
-                    ></div>
-                    <span class="mx-4 flex items-center justify-center">
-                      <svg
-                        width="28"
-                        height="20"
-                        viewBox="0 0 28 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g filter="url(#star-glow-eyes)">
-                          <path
-                            d="M14 3L15.2361 8.76393L21 10L15.2361 11.2361L14 17L12.7639 11.2361L7 10L12.7639 8.76393L14 3Z"
-                            fill="#EAC463"
-                            stroke="#EAC463"
-                            stroke-width="1.2"
-                          ></path>
-                        </g>
-                        <defs>
-                          <filter
-                            id="star-glow-eyes"
-                            x="0"
-                            y="0"
-                            width="28"
-                            height="20"
-                            filterUnits="userSpaceOnUse"
-                            color-interpolation-filters="sRGB"
-                          >
-                            <feDropShadow
-                              dx="0"
-                              dy="0"
-                              stdDeviation="2"
-                              flood-color="#EAC463"
-                              flood-opacity="0.7"
-                            ></feDropShadow>
-                          </filter>
-                        </defs>
-                      </svg>
-                    </span>
-                    <div
-                      class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
-                    ></div>
-                  </div>
                 </h3>
+                <div class="flex items-center w-full my-1">
+                  <div class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                  <span class="mx-4 flex items-center justify-center">
+                    <svg
+                      width="28"
+                      height="20"
+                      viewBox="0 0 28 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g filter="url(#star-glow-eyes)">
+                        <path
+                          d="M14 3L15.2361 8.76393L21 10L15.2361 11.2361L14 17L12.7639 11.2361L7 10L12.7639 8.76393L14 3Z"
+                          fill="#EAC463"
+                          stroke="#EAC463"
+                          stroke-width="1.2"
+                        ></path>
+                      </g>
+                      <defs>
+                        <filter
+                          id="star-glow-eyes"
+                          x="0"
+                          y="0"
+                          width="28"
+                          height="20"
+                          filterUnits="userSpaceOnUse"
+                          color-interpolation-filters="sRGB"
+                        >
+                          <feDropShadow
+                            dx="0"
+                            dy="0"
+                            stdDeviation="2"
+                            flood-color="#EAC463"
+                            flood-opacity="0.7"
+                          ></feDropShadow>
+                        </filter>
+                      </defs>
+                    </svg>
+                  </span>
+                  <div class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                </div>
                 <div class="space-y-5 mt-4">
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Regular Manicure</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$15</span>
                   </div>
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Gel Manicure</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$35</span>
                   </div>
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Deluxe Manicure</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$25</span>
@@ -1140,102 +1149,82 @@
               class="bg-white/10 rounded-lg shadow-xl overflow-hidden border border-yellow-300 fade-in-up delay-450"
             >
               <div class="p-6 pb-2">
-                <h3
-                  class="text-3xl font-bold text-[#edca7b] tracking-wide text-center"
-                >
+                <h3 class="text-3xl font-bold text-[#edca7b] tracking-wide text-center">
                   Pedicure
-                  <div class="flex items-center w-full my-1">
-                    <div
-                      class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
-                    ></div>
-                    <span class="mx-4 flex items-center justify-center">
-                      <svg
-                        width="28"
-                        height="20"
-                        viewBox="0 0 28 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g filter="url(#star-glow-eyes)">
-                          <path
-                            d="M14 3L15.2361 8.76393L21 10L15.2361 11.2361L14 17L12.7639 11.2361L7 10L12.7639 8.76393L14 3Z"
-                            fill="#EAC463"
-                            stroke="#EAC463"
-                            stroke-width="1.2"
-                          ></path>
-                        </g>
-                        <defs>
-                          <filter
-                            id="star-glow-eyes"
-                            x="0"
-                            y="0"
-                            width="28"
-                            height="20"
-                            filterUnits="userSpaceOnUse"
-                            color-interpolation-filters="sRGB"
-                          >
-                            <feDropShadow
-                              dx="0"
-                              dy="0"
-                              stdDeviation="2"
-                              flood-color="#EAC463"
-                              flood-opacity="0.7"
-                            ></feDropShadow>
-                          </filter>
-                        </defs>
-                      </svg>
-                    </span>
-                    <div
-                      class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
-                    ></div>
-                  </div>
                 </h3>
+                <div class="flex items-center w-full my-1">
+                  <div class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                  <span class="mx-4 flex items-center justify-center">
+                    <svg
+                      width="28"
+                      height="20"
+                      viewBox="0 0 28 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g filter="url(#star-glow-eyes)">
+                        <path
+                          d="M14 3L15.2361 8.76393L21 10L15.2361 11.2361L14 17L12.7639 11.2361L7 10L12.7639 8.76393L14 3Z"
+                          fill="#EAC463"
+                          stroke="#EAC463"
+                          stroke-width="1.2"
+                        ></path>
+                      </g>
+                      <defs>
+                        <filter
+                          id="star-glow-eyes"
+                          x="0"
+                          y="0"
+                          width="28"
+                          height="20"
+                          filterUnits="userSpaceOnUse"
+                          color-interpolation-filters="sRGB"
+                        >
+                          <feDropShadow
+                            dx="0"
+                            dy="0"
+                            stdDeviation="2"
+                            flood-color="#EAC463"
+                            flood-opacity="0.7"
+                          ></feDropShadow>
+                        </filter>
+                      </defs>
+                    </svg>
+                  </span>
+                  <div class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                </div>
                 <div class="space-y-5 mt-4">
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Regular</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$30</span>
                   </div>
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Basic</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$35</span>
                   </div>
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Amazing</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$45</span>
                   </div>
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Deluxe</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$50</span>
                   </div>
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Luxurious Jelly</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$60</span>
                   </div>
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Super Deluxe</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$75</span>
                   </div>
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Deluxe Volcano</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$90</span>
@@ -1248,81 +1237,67 @@
               class="bg-white/10 rounded-lg shadow-xl overflow-hidden border border-yellow-300 fade-in-up delay-550"
             >
               <div class="p-6 pb-2">
-                <h3
-                  class="text-3xl font-bold text-[#edca7b] tracking-wide text-center"
-                >
+                <h3 class="text-3xl font-bold text-[#edca7b] tracking-wide text-center">
                   Additional Service
-                  <div class="flex items-center w-full my-1">
-                    <div
-                      class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
-                    ></div>
-                    <span class="mx-4 flex items-center justify-center">
-                      <svg
-                        width="28"
-                        height="20"
-                        viewBox="0 0 28 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g filter="url(#star-glow-eyes)">
-                          <path
-                            d="M14 3L15.2361 8.76393L21 10L15.2361 11.2361L14 17L12.7639 11.2361L7 10L12.7639 8.76393L14 3Z"
-                            fill="#EAC463"
-                            stroke="#EAC463"
-                            stroke-width="1.2"
-                          ></path>
-                        </g>
-                        <defs>
-                          <filter
-                            id="star-glow-eyes"
-                            x="0"
-                            y="0"
-                            width="28"
-                            height="20"
-                            filterUnits="userSpaceOnUse"
-                            color-interpolation-filters="sRGB"
-                          >
-                            <feDropShadow
-                              dx="0"
-                              dy="0"
-                              stdDeviation="2"
-                              flood-color="#EAC463"
-                              flood-opacity="0.7"
-                            ></feDropShadow>
-                          </filter>
-                        </defs>
-                      </svg>
-                    </span>
-                    <div
-                      class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
-                    ></div>
-                  </div>
                 </h3>
+                <div class="flex items-center w-full my-1">
+                  <div class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                  <span class="mx-4 flex items-center justify-center">
+                    <svg
+                      width="28"
+                      height="20"
+                      viewBox="0 0 28 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g filter="url(#star-glow-eyes)">
+                        <path
+                          d="M14 3L15.2361 8.76393L21 10L15.2361 11.2361L14 17L12.7639 11.2361L7 10L12.7639 8.76393L14 3Z"
+                          fill="#EAC463"
+                          stroke="#EAC463"
+                          stroke-width="1.2"
+                        ></path>
+                      </g>
+                      <defs>
+                        <filter
+                          id="star-glow-eyes"
+                          x="0"
+                          y="0"
+                          width="28"
+                          height="20"
+                          filterUnits="userSpaceOnUse"
+                          color-interpolation-filters="sRGB"
+                        >
+                          <feDropShadow
+                            dx="0"
+                            dy="0"
+                            stdDeviation="2"
+                            flood-color="#EAC463"
+                            flood-opacity="0.7"
+                          ></feDropShadow>
+                        </filter>
+                      </defs>
+                    </svg>
+                  </span>
+                  <div class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                </div>
                 <div class="space-y-5 mt-4">
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">French Tip</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$5</span>
                   </div>
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Flower Designs</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$5+</span>
                   </div>
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Nails Take Off</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$10+</span>
                   </div>
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Shellac Take Off</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$5</span>
@@ -1331,98 +1306,77 @@
               </div>
             </div>
           </div>
-          <!-- Right column: Gel Builder + Dip Powder -->
+          <!-- Right column: Eyelash Extension / Waxing/Threading / Gel Shellac -->
           <div class="space-y-6">
             <!-- Card: Eyelash Extension -->
             <div
               class="bg-white/10 rounded-lg shadow-xl overflow-hidden border border-yellow-300 fade-in-up delay-375"
             >
               <div class="p-6 pb-2">
-                <h3
-                  class="text-3xl font-bold text-[#edca7b] tracking-wide text-center"
-                >
+                <h3 class="text-3xl font-bold text-[#edca7b] tracking-wide text-center">
                   Eyelash Extension
-                  <div class="flex items-center w-full my-1">
-                    <div
-                      class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
-                    ></div>
-                    <span class="mx-4 flex items-center justify-center">
-                      <svg
-                        width="28"
-                        height="20"
-                        viewBox="0 0 28 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g filter="url(#star-glow-eyes)">
-                          <path
-                            d="M14 3L15.2361 8.76393L21 10L15.2361 11.2361L14 17L12.7639 11.2361L7 10L12.7639 8.76393L14 3Z"
-                            fill="#EAC463"
-                            stroke="#EAC463"
-                            stroke-width="1.2"
-                          ></path>
-                        </g>
-                        <defs>
-                          <filter
-                            id="star-glow-eyes"
-                            x="0"
-                            y="0"
-                            width="28"
-                            height="20"
-                            filterUnits="userSpaceOnUse"
-                            color-interpolation-filters="sRGB"
-                          >
-                            <feDropShadow
-                              dx="0"
-                              dy="0"
-                              stdDeviation="2"
-                              flood-color="#EAC463"
-                              flood-opacity="0.7"
-                            ></feDropShadow>
-                          </filter>
-                        </defs>
-                      </svg>
-                    </span>
-                    <div
-                      class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
-                    ></div>
-                  </div>
                 </h3>
+                <div class="flex items-center w-full my-1">
+                  <div class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                  <span class="mx-4 flex items-center justify-center">
+                    <svg
+                      width="28"
+                      height="20"
+                      viewBox="0 0 28 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g filter="url(#star-glow-eyes)">
+                        <path
+                          d="M14 3L15.2361 8.76393L21 10L15.2361 11.2361L14 17L12.7639 11.2361L7 10L12.7639 8.76393L14 3Z"
+                          fill="#EAC463"
+                          stroke="#EAC463"
+                          stroke-width="1.2"
+                        ></path>
+                      </g>
+                      <defs>
+                        <filter
+                          id="star-glow-eyes"
+                          x="0"
+                          y="0"
+                          width="28"
+                          height="20"
+                          filterUnits="userSpaceOnUse"
+                          color-interpolation-filters="sRGB"
+                        >
+                          <feDropShadow
+                            dx="0"
+                            dy="0"
+                            stdDeviation="2"
+                            flood-color="#EAC463"
+                            flood-opacity="0.7"
+                          ></feDropShadow>
+                        </filter>
+                      </defs>
+                    </svg>
+                  </span>
+                  <div class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                </div>
                 <div class="space-y-5 mt-4">
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Volume Eyelash</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
-                    <span class="text-[#edca7b] font-bold">$70</span>
+                    <span class="text-[#edca7b] font-bold">$75+</span>
                   </div>
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Individual Eyelash Full Set</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
-                    <span class="text-[#edca7b] font-bold">$50</span>
+                    <span class="text-[#edca7b] font-bold">$65+</span>
                   </div>
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Natural Eyelash Full Set</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
-                    <span class="text-[#edca7b] font-bold">$40</span>
+                    <span class="text-[#edca7b] font-bold">$60+</span>
                   </div>
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
-                    <span class="text-white">Thick and Eyelashes</span>
-                    <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
-                    <span class="text-[#edca7b] font-bold">$35</span>
-                  </div>
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Eyelash Fill</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
-                    <span class="text-[#edca7b] font-bold">$30+</span>
+                    <span class="text-[#edca7b] font-bold">$45+</span>
                   </div>
                 </div>
               </div>
@@ -1432,91 +1386,75 @@
               class="bg-white/10 rounded-lg shadow-xl overflow-hidden border border-yellow-300 fade-in-up delay-475"
             >
               <div class="p-6 pb-2">
-                <h3
-                  class="text-3xl font-bold text-[#edca7b] tracking-wide text-center"
-                >
+                <h3 class="text-3xl font-bold text-[#edca7b] tracking-wide text-center">
                   Waxing/Threading
-                  <div class="flex items-center w-full my-1">
-                    <div
-                      class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
-                    ></div>
-                    <span class="mx-4 flex items-center justify-center">
-                      <svg
-                        width="28"
-                        height="20"
-                        viewBox="0 0 28 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g filter="url(#star-glow-eyes)">
-                          <path
-                            d="M14 3L15.2361 8.76393L21 10L15.2361 11.2361L14 17L12.7639 11.2361L7 10L12.7639 8.76393L14 3Z"
-                            fill="#EAC463"
-                            stroke="#EAC463"
-                            stroke-width="1.2"
-                          ></path>
-                        </g>
-                        <defs>
-                          <filter
-                            id="star-glow-eyes"
-                            x="0"
-                            y="0"
-                            width="28"
-                            height="20"
-                            filterUnits="userSpaceOnUse"
-                            color-interpolation-filters="sRGB"
-                          >
-                            <feDropShadow
-                              dx="0"
-                              dy="0"
-                              stdDeviation="2"
-                              flood-color="#EAC463"
-                              flood-opacity="0.7"
-                            ></feDropShadow>
-                          </filter>
-                        </defs>
-                      </svg>
-                    </span>
-                    <div
-                      class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
-                    ></div>
-                  </div>
                 </h3>
+                <div class="flex items-center w-full my-1">
+                  <div class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                  <span class="mx-4 flex items-center justify-center">
+                    <svg
+                      width="28"
+                      height="20"
+                      viewBox="0 0 28 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g filter="url(#star-glow-eyes)">
+                        <path
+                          d="M14 3L15.2361 8.76393L21 10L15.2361 11.2361L14 17L12.7639 11.2361L7 10L12.7639 8.76393L14 3Z"
+                          fill="#EAC463"
+                          stroke="#EAC463"
+                          stroke-width="1.2"
+                        ></path>
+                      </g>
+                      <defs>
+                        <filter
+                          id="star-glow-eyes"
+                          x="0"
+                          y="0"
+                          width="28"
+                          height="20"
+                          filterUnits="userSpaceOnUse"
+                          color-interpolation-filters="sRGB"
+                        >
+                          <feDropShadow
+                            dx="0"
+                            dy="0"
+                            stdDeviation="2"
+                            flood-color="#EAC463"
+                            flood-opacity="0.7"
+                          ></feDropShadow>
+                        </filter>
+                      </defs>
+                    </svg>
+                  </span>
+                  <div class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                </div>
                 <div class="space-y-5 mt-4">
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Eye Brown</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$10+</span>
                   </div>
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Lips</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$8+</span>
                   </div>
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Legs</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
-                    <span class="text-[#edca7b] font-bold">$35+</span>
+                    <span class="text-[#edca7b] font-bold">$45+</span>
                   </div>
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Face</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
-                    <span class="text-[#edca7b] font-bold">$35+</span>
+                    <span class="text-[#edca7b] font-bold">$40+</span>
                   </div>
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Bikini</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
-                    <span class="text-[#edca7b] font-bold">$45+</span>
+                    <span class="text-[#edca7b] font-bold">$50+</span>
                   </div>
                 </div>
               </div>
@@ -1526,77 +1464,65 @@
               class="bg-white/10 rounded-lg shadow-xl overflow-hidden border border-yellow-300 fade-in-up delay-575"
             >
               <div class="p-6 pb-2">
-                <h3
-                  class="text-3xl font-bold text-[#edca7b] tracking-wide text-center"
-                >
+                <h3 class="text-3xl font-bold text-[#edca7b] tracking-wide text-center">
                   Gel Shellac
-                  <div class="flex items-center w-full my-1">
-                    <div
-                      class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
-                    ></div>
-                    <span class="mx-4 flex items-center justify-center">
-                      <svg
-                        width="28"
-                        height="20"
-                        viewBox="0 0 28 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g filter="url(#star-glow-eyes)">
-                          <path
-                            d="M14 3L15.2361 8.76393L21 10L15.2361 11.2361L14 17L12.7639 11.2361L7 10L12.7639 8.76393L14 3Z"
-                            fill="#EAC463"
-                            stroke="#EAC463"
-                            stroke-width="1.2"
-                          ></path>
-                        </g>
-                        <defs>
-                          <filter
-                            id="star-glow-eyes"
-                            x="0"
-                            y="0"
-                            width="28"
-                            height="20"
-                            filterUnits="userSpaceOnUse"
-                            color-interpolation-filters="sRGB"
-                          >
-                            <feDropShadow
-                              dx="0"
-                              dy="0"
-                              stdDeviation="2"
-                              flood-color="#EAC463"
-                              flood-opacity="0.7"
-                            ></feDropShadow>
-                          </filter>
-                        </defs>
-                      </svg>
-                    </span>
-                    <div
-                      class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"
-                    ></div>
-                  </div>
                 </h3>
+                <div class="flex items-center w-full my-1">
+                  <div class="flex-1 h-[2px] bg-gradient-to-r from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                  <span class="mx-4 flex items-center justify-center">
+                    <svg
+                      width="28"
+                      height="20"
+                      viewBox="0 0 28 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g filter="url(#star-glow-eyes)">
+                        <path
+                          d="M14 3L15.2361 8.76393L21 10L15.2361 11.2361L14 17L12.7639 11.2361L7 10L12.7639 8.76393L14 3Z"
+                          fill="#EAC463"
+                          stroke="#EAC463"
+                          stroke-width="1.2"
+                        ></path>
+                      </g>
+                      <defs>
+                        <filter
+                          id="star-glow-eyes"
+                          x="0"
+                          y="0"
+                          width="28"
+                          height="20"
+                          filterUnits="userSpaceOnUse"
+                          color-interpolation-filters="sRGB"
+                        >
+                          <feDropShadow
+                            dx="0"
+                            dy="0"
+                            stdDeviation="2"
+                            flood-color="#EAC463"
+                            flood-opacity="0.7"
+                          ></feDropShadow>
+                        </filter>
+                      </defs>
+                    </svg>
+                  </span>
+                  <div class="flex-1 h-[2px] bg-gradient-to-l from-[#EAC463] via-[#e1d28e] to-[#2b2407]"></div>
+                </div>
                 <div class="space-y-5 mt-4">
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">With Pedicure</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
-                    <span class="text-[#edca7b] font-bold">$18</span>
+                    <span class="text-[#edca7b] font-bold">$15+</span>
                   </div>
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
+                  <div class="flex justify-between items-center text-base md:text-lg">
                     <span class="text-white">Shellac Only</span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$25+</span>
                   </div>
-                  <div
-                    class="flex justify-between items-center text-base md:text-lg"
-                  >
-                    <span class="text-white"
-                      >Nails Cleaning, Take Off & Gel Shellac</span
-                    >
+                  <div class="flex justify-between items-center text-base md:text-lg">
+                    <span class="text-white">
+                      Nails Cleaning, Take Off &amp; Gel Shellac
+                    </span>
                     <div class="h-[0.5px] flex-grow mx-4 bg-gray-200"></div>
                     <span class="text-[#edca7b] font-bold">$30+</span>
                   </div>
@@ -1623,6 +1549,13 @@
           // Fade in for headings, grid, and all cards
           document.addEventListener("DOMContentLoaded", function () {
             const fadeEls = document.querySelectorAll("#services .fade-in-up");
+            if (!('IntersectionObserver' in window)) {
+              // Fall back if IntersectionObserver not supported
+              fadeEls.forEach(function(el){
+                el.classList.add("fade-in-visible");
+              });
+              return;
+            }
             const observer = new window.IntersectionObserver(
               onIntersection,
               options
@@ -2257,8 +2190,8 @@
           }
           .carousel-3d-img {
             position: absolute;
-            width: 380px;
-            height: 420px;
+            width: 270px;
+            height: 330px;
             left: 50%; top: 50%;
             transform-style: preserve-3d;
             border-radius: 18px;
@@ -2352,10 +2285,10 @@
         <div class="carousel-3d-container">
           <div class="carousel-3d" id="carousel3d">
             <!-- Thương hiệu nằm trong trục, nhưng KHÔNG bị xoay -->
-            <div class="carousel-3d-brand">
+            <!-- <div class="carousel-3d-brand">
               <span class="carousel-3d-brand-text">LISA Nails and Spa</span>
               <span class="carousel-3d-brand-sub">True beauty, cherish yourself</span>
-            </div>
+            </div> -->
             <img src="./img/gallery_22.jpg" alt="Carousel Img 1" class="carousel-3d-img" />
             <img src="./img/gallery_23.jpg" alt="Carousel Img 2" class="carousel-3d-img" />
             <img src="./img/gallery_24.jpg" alt="Carousel Img 3" class="carousel-3d-img" />
@@ -2366,6 +2299,15 @@
             <img src="./img/gallery_14.jpg" alt="Carousel Img 8" class="carousel-3d-img" />
             <img src="./img/gallery_16.jpg" alt="Carousel Img 9" class="carousel-3d-img" />
             <img src="./img/gallery_26.jpg" alt="Carousel Img 10" class="carousel-3d-img" />
+            <img src="./img/gallery_20.jpg" alt="Carousel Img 10" class="carousel-3d-img" />
+            <img src="./img/gallery_13.jpg" alt="Carousel Img 10" class="carousel-3d-img" />
+            <img src="./img/gallery_09.jpg" alt="Carousel Img 10" class="carousel-3d-img" />
+            <img src="./img/gallery_02.jpg" alt="Carousel Img 10" class="carousel-3d-img" />
+            <img src="./img/gallery_10.jpg" alt="Carousel Img 10" class="carousel-3d-img" />
+            <img src="./img/gallery_04.jpg" alt="Carousel Img 10" class="carousel-3d-img" />
+            <img src="./img/gallery_03.jpg" alt="Carousel Img 10" class="carousel-3d-img" />
+            <img src="./img/gallery_08.jpg" alt="Carousel Img 10" class="carousel-3d-img" />
+
           </div>
         </div>
         <script>
